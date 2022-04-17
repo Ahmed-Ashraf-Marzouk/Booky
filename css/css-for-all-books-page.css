@@ -1,0 +1,12 @@
+.nav-bar {
+    display: flex;
+}
+
+.logo {
+    transform: scale(0.2);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
