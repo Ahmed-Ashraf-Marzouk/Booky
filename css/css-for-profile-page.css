@@ -1,5 +1,49 @@
+
+body {
+    background-color: #faa79f;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 #profile {
     text-align: center;
-    color: red;
+    color: white;
     margin-top: 3%;
 }
+
+.topnav {
+    text-align: center;
+    font-size: 114%;
+    margin-top: 3%;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #ef786d;
+  }
+
+
+.topnav a {
+    color: rgb(213, 197, 197);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.topnav a:hover {
+    color: black;
+  }
+
+
+.topnav a.active {
+    color: rgb(99, 11, 11);
+  }
+
+
+
+
+
+
+
+
+
+
+
