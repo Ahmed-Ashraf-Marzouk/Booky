@@ -1,40 +1,47 @@
 
 body {
-    background-color: #faa79f;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+  background-color: #faa79f;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#logo-id {
+  width: 4%;
+  margin-right: 35%;
+  margin-left: 1%;
 }
 
 #profile {
-    text-align: center;
-    color: white;
-    margin-top: 3%;
+  /* text-align: center; */
+  color: white;
+  margin-top: 1%;
 }
 
+
 .topnav {
-    text-align: center;
-    font-size: 114%;
-    margin-top: 3%;
-    border-width: 3px;
-    border-style: solid;
-    background-color: #ef786d;
+  text-align: center;
+  font-size: 114%;
+  margin-top: 3%;
+  border-width: 3px;
+  border-style: solid;
+  background-color: #ef786d;
   }
 
 
 .topnav a {
-    color: rgb(213, 197, 197);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  color: rgb(213, 197, 197);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
   }
 
 .topnav a:hover {
-    color: black;
+  color: black;
   }
 
 
 .topnav a.active {
-    color: rgb(99, 11, 11);
+  color: rgb(99, 11, 11);
   }
 
 
