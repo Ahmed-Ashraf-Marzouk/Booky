@@ -11,19 +11,39 @@ body {
   margin-left: 1%;
 }
 
-#profile {
+#profile-page {
   /* text-align: center; */
   color: white;
   margin-top: 1%;
 }
 
+#profile-picture-id {
+  width: 20%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+#profile-name {
+  margin-block-start: -8.5em;
+  font-size: 36.5px;
+  margin-left: 37%;
+}
+
+#profile-info {
+  margin-block-start: -0.05em;
+  font-size: 19.5px;
+  margin-left: 37%;
+  color: rgb(247, 239, 239);
+}
 
 .topnav {
   text-align: center;
   font-size: 114%;
   margin-top: 3%;
   border-width: 3px;
-  border-style: solid;
+  border-style: solid none;
+  border-radius: 26%;
+  padding: 1%;
   background-color: #ef786d;
   }
 
