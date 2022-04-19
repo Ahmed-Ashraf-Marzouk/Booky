@@ -104,6 +104,57 @@ body {
     margin-left: 20px
 }
 
-img {
+.book-img {
     width: 350px;
+    border-radius: 5px;
+
+}
+
+.rating {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.star-item {
+    display: inline;
+}
+
+.star-img {
+    width: 12px;
+}
+
+.fig {
+    border: 2px solid #f6ccb6;
+    border-radius: 5px;
+    padding: 18px;
+    margin: 26px;
+}
+
+figcaption {
+    margin-bottom: 10px;
+    font-family: 'Akshar', sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+    transition-duration: 400ms;
+    padding-right: 0px;
+}
+
+figcaption:hover {
+    color: #f65d4e;
+}
+
+.author {
+    font-family: 'Akshar', sans-serif;
+    color: grey;
+    font-weight: 100;
+
+}
+
+.price {
+    color: #f65d4e;
+    font-family: 'Akshar', sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
