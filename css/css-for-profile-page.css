@@ -1,8 +1,12 @@
 
-body {
+.body {
   background-color: #faa79f;
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
+
+  /* font-family: 'Varela Round', sans-serif; */
+
+  
 }
 
 #logo-id {
@@ -21,6 +25,7 @@ body {
   width: 20%;
   margin-left: 10%;
   margin-top: 5%;
+  border-radius: 10%;
 }
 
 #profile-name {
@@ -30,6 +35,8 @@ body {
 }
 
 #profile-info {
+  width: 45%;
+  text-align: justify;
   margin-block-start: -0.05em;
   font-size: 19.5px;
   margin-left: 37%;
@@ -52,7 +59,8 @@ body {
   color: rgb(213, 197, 197);
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 19px;
+  font-weight: bold;
   }
 
 .topnav a:hover {
@@ -65,12 +73,73 @@ body {
   }
 
 
+.footer {
+  background-color: rgb(213, 197, 197);
+  margin-top: 30%;
+  border-width: 5px;
+  border-color: rgb(213, 197, 197);
+  border-style: solid;
+}
 
+.section-1 {
+  margin-top: 10%;
+  border-width: 5px 0px 0px;
+  border-color: rgb(213, 197, 197);
+  border-style: solid;
+}
 
+#facebook-icon {
+  color: red;
+  transition: color 0.2s;
+  margin: 0 10px;
+  font-size: 30px;
+}
 
+ #facebook-icon:hover {
+  color: black;
 
+}
 
+#twitter-icon {
+  color: red;
+  transition: color 0.2s;
+  margin: 0 10px;
+  font-size: 30px;
+}
 
+#twitter-icon:hover {
+  color: black;
+
+}
+
+#instagram-icon {
+  color: red;
+  transition: color 0.2s;
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+#instagram-icon:hover {
+  color: black;
+
+}
+
+#google-icon {
+  color: red;
+  transition: color 0.2s;
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+#google-icon:hover {
+  color: black;
+
+}
+
+.icons-container {
+  margin-left: 13%;
+  margin-top: 6.5%;
+}
 
 
 
