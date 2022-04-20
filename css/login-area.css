@@ -1,0 +1,89 @@
+#login-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+
+    width: 100%;
+    max-width: 65em;
+}
+
+#login-area div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+#login-area div:nth-of-type(1){}
+
+#login-area form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#login-area input{
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: 500;
+    width: 100%;
+}
+#login-area input:focus-visible{
+    outline: none;
+}
+#login-area span{
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.6), inset -1px -1px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+#login-area span:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#login-area i{
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+#login-area label{
+    font-size: 2rem;
+    padding: 0 2rem 0.3em;
+    font-weight: bold;
+    font-family: 'DM Serif Display';
+    letter-spacing: 0.3rem;
+}
+
+#login-area label:nth-of-type(2){
+    margin: 2em 0 0;
+}
+
+#login-area button{
+    width: 50%;
+    margin: 10% auto 0;
+    font-family: 'DM Serif Display';
+    font-size: 2rem;
+    border-radius: 50px;
+    border: none;
+    width: fit-content;
+    padding: 2.5% 5%;
+    background-color: #FC4F3F;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+#login-area div:nth-of-type(2){}
+
+#login-area img{
+    display: block;
+    width: 70%;
+    border-radius: 2px;
+    object-fit: contain;
+    text-align: center;
+    margin: auto;
+}
