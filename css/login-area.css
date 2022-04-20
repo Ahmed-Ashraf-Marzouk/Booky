@@ -15,7 +15,16 @@
     width: 100%;
 }
 
-#login-area div:nth-of-type(1){}
+#login-area div:nth-of-type(1){
+    align-items: center;
+}
+
+#login-area p{
+    display: inline;
+    font-family: 'DM Serif Display';
+    font-size: 2.5rem;
+    color: #FC4F3F;;
+}
 
 #login-area form{
     display: flex;
@@ -32,23 +41,36 @@
     font-weight: 500;
     width: 100%;
 }
+
 #login-area input:focus-visible{
     outline: none;
 }
 #login-area span{
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.6), inset -1px -1px 2px rgba(0, 0, 0, 0.6);
-    border-radius: 50px;
     width: 100%;
     padding: 1rem 2rem;
     box-sizing: border-box;
 }
 
+#login-area span:nth-of-type(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 #login-area span:nth-of-type(2){
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#login-area i{
+#login-area i:nth-of-type(1){
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+#login-area i:nth-of-type(2){
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+#login-area i:nth-of-type(3){
     padding-left: 1rem;
     box-sizing: border-box;
 }
@@ -66,7 +88,7 @@
 
 #login-area button{
     width: 50%;
-    margin: 10% auto 0;
+    margin: 0.5em auto 0;
     font-family: 'DM Serif Display';
     font-size: 2rem;
     border-radius: 50px;
@@ -74,7 +96,7 @@
     width: fit-content;
     padding: 2.5% 5%;
     background-color: #FC4F3F;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.394);
 }
 
 #login-area div:nth-of-type(2){}
@@ -86,4 +108,21 @@
     object-fit: contain;
     text-align: center;
     margin: auto;
+}
+
+#login-area button:hover{
+    background-color: #DA3D2F;
+}
+
+#login-area button:active{
+    transform: scale(0.9, 0.9);
+}
+
+#login-area #lost-password{
+    color: #3C91E6;
+    font-size: 1rem;
+    margin: 1em;
+}
+#login-area #lost-password:hover{
+    color: hsl(210, 77%, 47%);
 }
