@@ -1,0 +1,4 @@
+-- 02/06/2007 --
+SelfishNet doesn't connect to network card in promiscuous mode anymore. Some INTEL cards were having problem with that.
+-- 04/06/2007 --
+Changes made to enable running Selfishnet on a Vista machine (npptools.dll added). This release will work on Vista and XP machines, but not on 2003.
