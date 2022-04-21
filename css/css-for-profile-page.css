@@ -73,21 +73,6 @@
   }
 
 
-.footer {
-  background-color: rgb(213, 197, 197);
-  margin-top: 30%;
-  border-width: 5px;
-  border-color: rgb(213, 197, 197);
-  border-style: solid;
-}
-
-.section-1 {
-  margin-top: 10%;
-  border-width: 5px 0px 0px;
-  border-color: rgb(213, 197, 197);
-  border-style: solid;
-}
-
 #facebook-icon {
   color: red;
   transition: color 0.2s;
@@ -140,6 +125,70 @@
   margin-left: 13%;
   margin-top: 6.5%;
 }
+
+.section-1 {
+  margin-top: 3%;
+  border-width: 5px 0px 0px;
+  border-color: rgb(213, 197, 197);
+  border-style: solid;
+}
+
+.footer {
+  background-color: rgb(213, 197, 197);
+  margin-top: 30%;
+  border-width: 5px;
+  border-color: rgb(213, 197, 197);
+  border-style: solid;
+}
+
+#books-by {
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+#image-book-1 {
+  width: 20%;
+  margin-left: 10%;
+  margin-top: 1%;
+  border-radius: 10%;
+}
+
+#title-book-1 {
+  margin-left: 16.4%;
+}
+
+#image-book-2 {
+  width: 20%;
+  margin-left: 35%;
+  border-radius: 10%;
+}
+
+#title-book-2 {
+  margin-left: 41%;
+}
+
+#book-2 {
+  margin-block-start: -16.5em;
+}
+
+
+#image-book-3 {
+  width: 20%;
+  margin-left: 60%;
+  border-radius: 10%;
+}
+
+#title-book-3 {
+  margin-left: 66%;
+}
+
+#book-3 {
+  margin-block-start: -16em;
+}
+
+
+
+
 
 
 
