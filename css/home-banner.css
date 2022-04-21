@@ -1,0 +1,40 @@
+
+#home-banner{
+    text-align: center;
+    margin: 2.5em 0 2.5em 0;
+    padding: 0;
+}
+
+#home-banner span{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    display: inline-block;
+    font-family: 'DM Serif Display';
+    color: #FC4F3F;
+}
+
+#home-banner span:nth-child(1){
+    font-size: 3.6rem;
+}
+
+#home-banner span:nth-child(2){
+    font-size: 1.4rem;
+    margin-bottom: 0.9em;
+}
+
+#home-banner div{
+    text-align: center;
+    box-shadow: inset 1px 1px 4px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+#home-banner img{
+    width: 26%;
+    
+}
+
+/* ************************ */

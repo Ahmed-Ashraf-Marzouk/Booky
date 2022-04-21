@@ -12,9 +12,14 @@
     <script src="https://kit.fontawesome.com/54f44a10c5.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/home-banner.css">
+    <link rel="stylesheet" href="css/login-area.css">
     
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,16 +31,16 @@
 
             <section>
                 <li>
-                    <a href=".html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href=".html">Books</a>
+                    <a href="all_books.html">Books</a>
                 </li>
                 <li>
-                    <a href=".html">Sellers</a>
+                    <a href="all_members.html">Sellers</a>
                 </li>
                 <li>
-                    <a href=".html">Bookmarks</a>
+                    <a href="profile.html">Bookmarks</a>
                 </li>
             </section>
 
@@ -46,58 +51,91 @@
     </nav>
     
     <main>
+        <section id="home-banner">
+            <div>
+                <span>Book A Book</span>
+                <span>Make a deal.</span>
+                <img src="media\.svg\_path_.svg" alt="handshake image">
+            </div>
+        </section>
+
+        <section id="login-area">
+            <div>
+                <p>Login-in</p>
+                <form id="login-form">
+                    <label for="username">Username</label>
+                    <span>
+                        <i class="fa-solid fa-address-card"></i>
+                        <input type="text" name="username" id="username" placeholder="Username">
+                    </span>
+                    <label for="password">Password</label>
+                    <span>
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </form>
+                <a href="index.html" id="lost-password">Did it happen again?</a>
+                <button form="login-form" type="submit">Submit</button>
+            </div>
+            <div>
+                <img src="media\.jpg\book-and-coffe.jpg" alt="">
+            </div>
+        </section>
         
-        <h1> Wanna Book a Book?</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
-            Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
-            Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
-            Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
-            Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
-            Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
-            Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
-            Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
-            Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
-            Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
-        </p>
+        <section>
+            <h1> Wanna Book a Book?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
+                Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
+                Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
+                Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
+                Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
+                Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
+                Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
+                Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
+                Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
+                Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
+            </p>
 
-        <h1> Wanna Book a Book?</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
-            Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
-            Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
-            Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
-            Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
-            Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
-            Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
-            Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
-            Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
-            Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
-        </p>
+            <h1> Wanna Book a Book?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
+                Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
+                Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
+                Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
+                Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
+                Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
+                Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
+                Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
+                Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
+                Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
+            </p>
 
-        <h1> Wanna Book a Book?</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
-            Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
-            Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
-            Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
-            Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
-            Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
-            Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
-            Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
-            Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
-            Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
-        </p>
+            <h1> Wanna Book a Book?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
+                Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
+                Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
+                Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
+                Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
+                Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
+                Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
+                Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
+                Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
+                Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
+            </p>
 
-        <h1> Wanna Book a Book?</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
-            Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
-            Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
-            Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
-            Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
-            Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
-            Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
-            Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
-            Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
-            Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
-        </p>
+            <h1> Wanna Book a Book?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
+                Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
+                Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
+                Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
+                Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
+                Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
+                Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
+                Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
+                Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
+                Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
+            </p>
+        </section>
     </main>
             
 </body>
