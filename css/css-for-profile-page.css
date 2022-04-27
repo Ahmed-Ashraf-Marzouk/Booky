@@ -10,6 +10,7 @@
 }
 
 #logo-id {
+  vertical-align: middle;
   width: 4%;
   margin-right: 35%;
   margin-left: 1%;
@@ -36,14 +37,20 @@
 
 #profile-info {
   width: 45%;
+  height: 220px;
   text-align: justify;
   margin-block-start: -0.05em;
   font-size: 19.5px;
   margin-left: 37%;
   color: rgb(247, 239, 239);
+  overflow: auto;
 }
 
 .topnav {
+  /* position: fixed;
+  overflow: hidden;
+  top: 0; */
+
   text-align: center;
   font-size: 114%;
   margin-top: 3%;
@@ -123,7 +130,7 @@
 
 .icons-container {
   margin-left: 13%;
-  margin-top: 6.5%;
+  margin-top: 2.5%;
 }
 
 .section-1 {
