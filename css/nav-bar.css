@@ -45,7 +45,7 @@
 }
 
 
-#nav-bar-logo a{
+#nav-bar-logo a, .footer-logo{
     color: #FC4F3F;
 
     font-family: 'DM Serif Display';
