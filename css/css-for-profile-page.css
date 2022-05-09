@@ -10,22 +10,29 @@
 }
 
 #logo-id {
-  vertical-align: middle;
+  /* vertical-align: middle; */
   width: 4%;
-  margin-right: 35%;
-  margin-left: 1%;
+  position: relative;
+  top: -64px;
+  left: 40px;
+
+  /* margin-right: 35%; */
+  /* margin-left: 1%; */
+  
 }
 
 #profile-page {
-  /* text-align: center; */
+  text-align: center;
   color: white;
-  margin-top: 1%;
+  position: relative;
+  top: 10px;
+  left: 0%;
 }
 
 #profile-picture-id {
   width: 20%;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 3%;
   border-radius: 10%;
 }
 
@@ -53,12 +60,14 @@
 
   text-align: center;
   font-size: 114%;
-  margin-top: 3%;
+  margin-top: -2%;
   border-width: 3px;
   border-style: solid none;
   border-radius: 26%;
   padding: 1%;
   background-color: #ef786d;
+  position: sticky;
+  top: 0;
   }
 
 
@@ -140,62 +149,65 @@
   border-style: solid;
 }
 
+#books-by {
+  margin-left: 10%;
+  margin-top: 2%;
+  width: fit-content;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #f65d4e;
+}
+
+.books-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 124px
+}
+
+.book-img {
+  width: 291px;
+  border-radius: 13px;
+}
+
+.figure-attribute {
+  border: 2px solid #f65d4e;
+  border-radius: 5px;
+  padding: 18px;
+  margin: 26px;
+}
+
+.fig-caption {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 0px;
+  font-size: 20px;
+  transition-duration: 400ms;
+}
+
+.fig-caption:hover {
+  color: #f65d4e;
+}
+
+.author {
+  color: #df0202;
+  font-weight: 100;
+
+}
+
+.price {
+  color: #ab3125;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
 .footer {
   background-color: rgb(213, 197, 197);
-  margin-top: 30%;
+  margin-top: 5%;
   border-width: 5px;
   border-color: rgb(213, 197, 197);
   border-style: solid;
 }
-
-#books-by {
-  margin-left: 10%;
-  margin-top: 2%;
-}
-
-#image-book-1 {
-  width: 20%;
-  margin-left: 10%;
-  margin-top: 1%;
-  border-radius: 10%;
-}
-
-#title-book-1 {
-  margin-left: 16.4%;
-}
-
-#image-book-2 {
-  width: 20%;
-  margin-left: 35%;
-  border-radius: 10%;
-}
-
-#title-book-2 {
-  margin-left: 41%;
-}
-
-#book-2 {
-  margin-block-start: -16.5em;
-}
-
-
-#image-book-3 {
-  width: 20%;
-  margin-left: 60%;
-  border-radius: 10%;
-}
-
-#title-book-3 {
-  margin-left: 66%;
-}
-
-#book-3 {
-  margin-block-start: -16em;
-}
-
-
-
-
 
 
 
