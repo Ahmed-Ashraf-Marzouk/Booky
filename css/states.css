@@ -1,0 +1,36 @@
+.move *{
+  transition: all 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.ease{
+    transition: font-size 2000ms ease;
+}
+
+.show{
+    display: inline-block;
+}
+
+.hide{
+    display: none;
+}
+
+.visible{
+    visibility:visible;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+.underline{
+    text-decoration: 0.2rem solid underline var(--bg);
+}
+
+
+.hover-button {
+    background-color: var(--bg-light);
+}
+
+.hover-button-child{
+    color: var(--Orange);
+}

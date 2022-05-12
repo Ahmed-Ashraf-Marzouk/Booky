@@ -1,30 +1,30 @@
 #login-area{
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
-
+    /* justify-content: stretch; */
     width: 100%;
-    max-width: 65em;
 }
 
-#login-area div{
+#login-area .left, .right{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+}
+
+#login-area .left{
+    align-items: center;
+    flex: 1;
+    padding-left: 30rem;
     width: 100%;
 }
 
-#login-area div:nth-of-type(1){
-    align-items: center;
-}
-
-#login-area p{
+#login-area .small-title{
     display: inline;
     font-family: 'DM Serif Display';
-    font-size: 2.5rem;
-    color: #FC4F3F;;
+    font-size: 3.5rem;
+    color: var(--Orange);;
 }
+
 
 #login-area form{
     display: flex;
@@ -36,46 +36,27 @@
 #login-area input{
     border: none;
     background: none;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-family: 'M PLUS Rounded 1c';
     font-weight: 500;
     width: 100%;
-}
-
-#login-area input:focus-visible{
+    margin: 0 1rem;
+}#login-area input:focus-visible{
     outline: none;
 }
-#login-area span{
+
+/* .text-input{
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.6), inset -1px -1px 2px rgba(0, 0, 0, 0.6);
     width: 100%;
     padding: 1rem 2rem;
     box-sizing: border-box;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
 
-#login-area span:nth-of-type(1){
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#login-area span:nth-of-type(2){
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#login-area i:nth-of-type(1){
-    padding-right: 1rem;
-    box-sizing: border-box;
-}
-#login-area i:nth-of-type(2){
-    padding-right: 1rem;
-    box-sizing: border-box;
-}
-#login-area i:nth-of-type(3){
-    padding-left: 1rem;
-    box-sizing: border-box;
-}
 #login-area label{
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0 2rem 0.3em;
     font-weight: bold;
     font-family: 'DM Serif Display';
@@ -86,20 +67,6 @@
     margin: 2em 0 0;
 }
 
-#login-area button{
-    width: 50%;
-    margin: 0.5em auto 0;
-    font-family: 'DM Serif Display';
-    font-size: 2rem;
-    border-radius: 50px;
-    border: none;
-    width: fit-content;
-    padding: 2.5% 5%;
-    background-color: #FC4F3F;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.394);
-}
-
-#login-area div:nth-of-type(2){}
 
 #login-area img{
     display: block;
@@ -110,19 +77,13 @@
     margin: auto;
 }
 
-#login-area button:hover{
-    background-color: #DA3D2F;
-}
-
-#login-area button:active{
-    transform: scale(0.9, 0.9);
-}
 
 #login-area #lost-password{
-    color: #3C91E6;
     font-size: 1rem;
     margin: 1em;
 }
-#login-area #lost-password:hover{
-    color: hsl(210, 77%, 47%);
+
+#login-area form i{
+    font-size: 1.5rem;
 }
+

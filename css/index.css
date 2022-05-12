@@ -1,27 +1,57 @@
-body {
-    background-color: antiquewhite;
+html {
+    font-size: 10px;
+    background-color: var(--bg-light)
+}
+
+.max-width-body {
+    /* background-color: antiquewhite; */
+    background-color: var(--bg-light);
     
     font-family: 'Varela Round';
-    font-size: 19px;
+    font-size: 1rem;
 
-    max-width: 65em;
+    /* max-width: 98%; */
     
-    margin: 2em auto 0;
+    margin: 0 auto;
     
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    /* padding: 2rem; */
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.1rem 0.2rem rgb(0 0 0 / 4%)
 }
 
 
 *::selection{
     color: white;
-    background-color: #FC4F3F;
+    background-color: var(--Orange);
 }
 
 main{
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0 0 5rem;
+}
+
+a{
+    color: var(--Accent);
+    text-decoration: 0.1rem underline;
+}
+
+a:hover{
+    display: inline-block;
+    color: var(--Orange);
+    cursor: pointer;
 }
 

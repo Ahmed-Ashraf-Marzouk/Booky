@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="css/nav-bar.css">
     <link rel="stylesheet" href="css/home-banner.css">
     <link rel="stylesheet" href="css/login-area.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/states.css">
+    <link rel="stylesheet" href="css/text-input.css">
     
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,11 +27,11 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <nav id="default-nav-bar">
+<body class="max-width-body bg-color">
+    <nav id="nav-bar">
         <ul>
             <li id="nav-bar-logo">
-                <a href=".html">BOOKY</a>
+                <a class="main-color-txt" href=".html">BOOKY</a>
             </li>
 
             <section>
@@ -44,100 +49,66 @@
                 </li>
             </section>
 
-            <li id="sign-up">
-                <a href=".html">Sign Up <i class="fa-solid fa-angle-right"></i></a>
+            <li id="sign-up" class="button-with-arrow orange-inset">
+                <a href=".html">Sign-Up</a>
+                <i class="fa-solid fa-angle-right"></i>
             </li>
         </ul>
     </nav>
-    
+    <section id="home-banner">
+        <!-- <div> -->
+            <div class="text title">Book A Book</div>
+            <div class="text subtitle">Make a deal.</div>
+            <img src="media\.svg\_path_.svg" alt="handshake image">
+            <img id="animated-handshake" src="media\.svg\handshake (2).svg" alt="handshake image">
+        <!-- </div> -->
+    </section>
     <main>
-        <section id="home-banner">
-            <div>
-                <span>Book A Book</span>
-                <span>Make a deal.</span>
-                <img src="media\.svg\_path_.svg" alt="handshake image">
-            </div>
-        </section>
-
         <section id="login-area">
-            <div>
-                <p>Login-in</p>
+            <div class="left">
+                <div class="small-title">
+                    Login-in
+                </div>
+
                 <form id="login-form">
                     <label for="username">Username</label>
-                    <span>
+                    <div class="text-input">
                         <i class="fa-solid fa-address-card"></i>
                         <input type="text" name="username" id="username" placeholder="Username">
-                    </span>
+                    </div>
+
                     <label for="password">Password</label>
-                    <span>
+                    <div class="text-input">
                         <i class="fa-solid fa-key"></i>
                         <input type="password" name="password" id="password" placeholder="Password">
-                        <i class="fa-solid fa-eye"></i>
-                    </span>
+                        <i id="show-password" class="fa-solid fa-eye show"></i>
+                        <i id="hide-password" class="fa-solid fa-eye-low-vision hide"></i>
+                    </div>
                 </form>
+
                 <a href="index.html" id="lost-password">Did it happen again?</a>
-                <button form="login-form" type="submit">Submit</button>
+                <div class="button-with-arrow orange-inset">
+                    <span>Submit</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
-            <div>
-                <img src="media\.jpg\book-and-coffe.jpg" alt="">
+            <div class="right">
+                <img src="media\.svg\Reading glasses-bro.svg" alt="">
             </div>
         </section>
         
         <section>
-            <h1> Wanna Book a Book?</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
-                Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
-                Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
-                Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
-                Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
-                Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
-                Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
-                Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
-                Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
-                Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
-            </p>
-
-            <h1> Wanna Book a Book?</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
-                Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
-                Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
-                Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
-                Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
-                Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
-                Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
-                Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
-                Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
-                Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
-            </p>
-
-            <h1> Wanna Book a Book?</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
-                Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
-                Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
-                Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
-                Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
-                Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
-                Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
-                Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
-                Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
-                Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
-            </p>
-
-            <h1> Wanna Book a Book?</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam expedita veritatis libero cupiditate error incidunt, enim accusamus harum velit, voluptatum aliquam fugit dolore quam? Blanditiis nisi nihil voluptatem. Unde?
-                Adipisci ex odio eius deleniti repudiandae delectus maiores quasi minus esse porro, officia dolorem nisi repellendus voluptas iure. Tenetur fugit consectetur possimus vitae doloribus consequatur ipsam quod rerum quibusdam asperiores!
-                Expedita ratione voluptatem sunt nulla magni mollitia, quisquam ipsum quibusdam earum, eveniet, vel ducimus quidem. Debitis iure quae at provident doloribus ex alias a, necessitatibus, doloremque dignissimos laudantium, optio harum!
-                Quaerat cumque ipsa aliquid odit, unde eum veritatis eius beatae, corrupti tenetur optio, iusto in tempora quibusdam nostrum? Distinctio sed quis blanditiis? Saepe cumque eius vero reiciendis quam. Excepturi, ea!
-                Accusantium, nobis. Ducimus quasi vero iusto totam officiis molestias earum assumenda, nesciunt sequi voluptatibus suscipit eligendi. Nesciunt eveniet beatae magnam repellendus. Perferendis sed assumenda quas delectus nam exercitationem ducimus quis?
-                Odio aspernatur impedit labore facilis sint unde saepe laborum, at iste amet nesciunt cumque, placeat officiis, harum exercitationem consequatur! Ut eveniet repudiandae earum autem tempora quas optio error eum assumenda!
-                Exercitationem necessitatibus est distinctio consectetur explicabo unde, quae ab. Soluta blanditiis deleniti iusto, repudiandae cum ratione maiores consequatur quod suscipit. Suscipit necessitatibus maiores similique expedita ea voluptate iure distinctio delectus!
-                Veniam ducimus totam doloribus ipsam fugiat, labore laudantium tempore modi repudiandae alias recusandae. Cumque ut deserunt itaque quaerat nostrum tenetur odit hic quas id molestiae? Dolore voluptates culpa molestiae. Earum!
-                Quaerat praesentium error sint earum. Et praesentium nobis porro veritatis consectetur quam voluptas vitae commodi dolores rem perspiciatis assumenda esse tempore corporis impedit a maxime, at accusamus. Maxime, dolores odio.
-                Aut incidunt veritatis sed corporis repellendus porro repudiandae suscipit modi, adipisci consectetur! Neque consequuntur doloribus perferendis, adipisci molestiae sapiente provident magnam blanditiis doloremque perspiciatis, incidunt placeat consequatur deserunt ea illum.
-            </p>
-        </section>
+ 
     </main>
-            
+
+    <footer>
+        <span id="nav-bar-logo">
+            <a class="main-color-txt" href=".html">BOOKY</a>
+        </span>
+    </footer>
+    
+    <script src="js/show-password.js"></script>
+    <script src="js/buttons.js"></script>
 </body>
         
 </html>

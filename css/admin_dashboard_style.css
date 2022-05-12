@@ -6,7 +6,7 @@ body{
 	padding: 0px;
 	margin: 0px;
 	font-family: Times-New-Roman;
-	background-color: #f5f4f9;
+	background-color: var(--bg-light);
 }
 #navbar{
 	margin: 0px;
