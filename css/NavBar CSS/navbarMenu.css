@@ -1,0 +1,112 @@
+#nav-bar > .row {
+    perspective: 2000px;
+}
+
+#nav-bar > .row > .popover {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+
+    display: inline-block;
+    box-sizing: border-box;
+
+    height: 3.9rem;
+
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    transform-origin: center -20px;
+    transform: rotateX(-25deg);
+}
+
+.content{
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    top: 4.3rem;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.section{
+    position: absolute;
+    left: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: fit-content;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.section.active{
+     opacity: 1;
+    transition: opacity 0.4s;
+}
+
+#nav-bar > .row > .popover.show{
+    opacity: 1;
+    transform: rotateX(0);
+}
+
+.popover > .background{
+    position: absolute;
+    top: 4.3rem;
+    left: 0;
+
+    background-color: antiquewhite;
+    box-shadow: 0px 0rem 4.5rem -1rem rgb(0 0 0 / 27%);
+    border-radius: 0.7rem;
+
+    transform-origin: 0 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.popover > .arrow {
+    position: absolute;
+    top: 3.7rem;
+    left: 0.8rem;
+
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    
+    background-color: antiquewhite;  
+    border-radius: 4.5px 0 0 0;
+    
+    transition: transform 0.3s, opacity 0.3s;   
+    transform: rotate(45deg);
+}
+
+/* Columns */
+.column{
+    padding:0 5px;
+    margin:20px 10px;
+}
+
+.section > .column > ul{
+    padding: 0;
+    margin: 0;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section > .column  li{
+    list-style: none;
+    white-space: nowrap;
+}
+
+.section > .column .title{
+    font-weight: bold;
+}
+
+li:not(.title){
+    margin-top:0.71rem;
+}

@@ -1,0 +1,175 @@
+<nav id="nav-bar">
+        <ul>
+            <li id="nav-bar-logo">
+                <a class="main-color-txt" href=".html">BOOKY</a>
+            </li>
+
+            <section>
+                <li>
+                    <a href="index.html">Home</a>
+
+                    
+                </li>
+                <li data-nav="products">
+                    <a href="all_books.html" data-nav="products">Books</a>
+                    <div class="popover">
+
+                        <div class="content">
+                          <div class="section section-products active">
+                            <div class="column">
+                                <ul>
+                                    <li class="title">By Genre</li>
+                                    <li>Action</li>
+                                    <li>Fiction</li>
+                                    <li>Non-fiction</li>
+                                    <li>Drama</li>
+                                    <li>Fiction</li>
+                                    <li>Adventre</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul>
+                                    <li class="title">By Topic</li>
+                                    <li>Science</li>
+                                    <li>Math</li>
+                                    <li>Nature</li>
+                                    <li>Health</li>
+                                    <li>Business</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul>
+                                    <li class="title">By Genre</li>
+                                    <li>Action</li>
+                                    <li>Adventre</li>
+                                    <li>Fiction</li>
+                                    <li>Non-fiction</li>
+                                    <li>Drama</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="background"></div>  
+                      </div>
+
+                    <!-- <div id="menu" class="">
+                        <div class="left">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Non-fiction</li>
+                                <li>Drama</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li class="title">By Topic</li>
+                                <li>Science</li>
+                                <li>Math</li>
+                                <li>Nature</li>
+                                <li>Health</li>
+                                <li>Business</li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                <!-- <div class="left">
+                        <ul>
+                            <li class="title">By Genre</li>
+                            <li>Action</li>
+                            <li>Adventre</li>
+                            <li>Fiction</li>
+                            <li>Non-fiction</li>
+                            <li>Drama</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li class="title">By Topic</li>
+                            <li>Science</li>
+                            <li>Math</li>
+                            <li>Nature</li>
+                            <li>Health</li>
+                            <li>Business</li>
+                        </ul>
+                    </div> -->
+                </li>
+                <li data-nav="developers">
+                    <a href="all_members.html" data-nav="developers">Sellers</a>
+                    
+                    <div class="popover">
+
+                        <div class="content">                          
+                          <div class="section section-developers active">
+                            <div class="column">
+                                <ul>
+                                    <li class="title">By Genre</li>
+                                    <li>Action</li>
+                                    <li>Fiction</li>
+                                    <li>Non-fiction</li>
+                                    <li>Drama</li>
+                                    <li>Fiction</li>
+                                    <li>Adventre</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="background"></div>  
+                      </div>
+                </li>
+                <li data-nav="company">
+                    <a href="profile.html" data-nav="company">Bookmarks</a>
+                    <div class="popover">
+
+                        <div class="content">
+                          <div class="section section-company active">
+                            <div class="column">
+                                <ul>
+                                    <li class="title">By Genre</li>
+                                    <li>Action</li>
+                                    <li>Fiction</li>
+                                    <li>Non-fiction</li>
+                                </ul>
+                            </div>
+            
+                            <div class="column">
+                                <ul>
+                                    <li class="title">By Genre</li>
+                                    <li>Action</li>
+                                    <li>Adventre</li>
+                                    <li>Fiction</li>
+                                    <li>Non-fiction</li>
+                                    <li>Drama</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="background"></div>  
+                      </div>
+                </li>
+            </section>
+
+            <li id="sign-up">
+                <a href="#/" class="button button-arrow bg-blue orange-inset">
+                    Sign Up
+                    <svg viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                      <g class="arrow-head">
+                        <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
+                      </g>
+                      <g class="arrow-body">
+                        <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
+                      </g>
+                    </svg>            
+                  </a>
+                <!-- <a href=".html">Sign-Up</a>
+                <i class="fa-solid fa-angle-right"></i> -->
+            </li>
+        </ul>
+
+        
+    </nav>

@@ -3,7 +3,7 @@
 }
 
 .ease{
-    transition: font-size 2000ms ease;
+    transition: all 200ms ease;
 }
 
 .show{
@@ -11,15 +11,15 @@
 }
 
 .hide{
-    display: none;
+    display: none !important; 
 }
 
 .visible{
-    visibility:visible;
+    opacity: 1;
 }
 
 .invisible{
-    visibility:hidden;
+    opacity: 0;
 }
 
 .underline{
@@ -34,3 +34,10 @@
 .hover-button-child{
     color: var(--Orange);
 }
+
+/* .hide-menu{
+
+}
+.show-menu{
+
+} */

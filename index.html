@@ -12,15 +12,21 @@
     <script src="https://kit.fontawesome.com/54f44a10c5.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/nav-bar.css">
+
+    <link rel="stylesheet" href="css\NavBar CSS\navbar.css">
+    <link rel="stylesheet" href="css\NavBar CSS\navbarMenu.css">
+    <link rel="stylesheet" href="css\buttons\signup_btn.css">
+
     <link rel="stylesheet" href="css/home-banner.css">
+
     <link rel="stylesheet" href="css/login-area.css">
+    <link rel="stylesheet" href="css/text-input.css">
+
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/states.css">
-    <link rel="stylesheet" href="css/text-input.css">
     
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -28,41 +34,187 @@
 </head>
 
 <body class="max-width-body bg-color">
-    <nav id="nav-bar">
-        <ul>
-            <li id="nav-bar-logo">
-                <a class="main-color-txt" href=".html">BOOKY</a>
-            </li>
 
-            <section>
-                <li>
-                    <a href="index.html">Home</a>
+    <nav id="nav-bar">
+        <span class="cell logo"> 
+            <a class="logo" href="" >BOOKY</a>
+        </span>
+
+        <ul class="row">           
+            <section class="container">
+                <li class="cell active"> 
+                    <a href="" >Home</a>
                 </li>
-                <li>
-                    <a href="all_books.html">Books</a>
+                <li class="cell " sectionName="section-members"> 
+                    <a href="index.html" >Members</a>
                 </li>
-                <li>
-                    <a href="all_members.html">Sellers</a>
+                <li class="cell" sectionName="section-books"> 
+                    <a href="" >Books</a>
                 </li>
-                <li>
-                    <a href="profile.html">Bookmarks</a>
+                <li class="cell" sectionName="section-bookmarks"> 
+                    <a href="" >Bookmarks</a>
+                </li>
+                <li class="cell" sectionName="section-profile"> 
+                    <a href="" >Profile</a>
                 </li>
             </section>
 
-            <li id="sign-up" class="button-with-arrow orange-inset">
-                <a href=".html">Sign-Up</a>
-                <i class="fa-solid fa-angle-right"></i>
-            </li>
+            <div class="popover">
+                <div class="content">
+                    <div class="section section-members">
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                                <li>Non-fiction</li>
+                                <li>Drama</li>
+                                <li>Fiction</li>
+                                <li>Adventre</li>
+                                <li>Adventre</li>
+                                <li>Adventre</li>
+                                <li>Adventre</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Topic</li>
+                                <li>Science</li>
+                                <li>Math</li>
+                                <li>Nature</li>
+                                <li>Health</li>
+                                <li>Business</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Non-fiction</li>
+                                <li>Drama</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section section-books">
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section section-bookmarks">
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="section section-profile">
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="background"></div>
+
+                <div class="arrow"></div>
+            </div>
         </ul>
+
+        <span class="cell btn" >
+            <span class="btn-shadow">
+                <span class="btn-body">
+                    <a class="" href="" >Sign Up</a>
+                </span>
+            </span>
+        </span>
+
     </nav>
+    
+
+
     <section id="home-banner">
         <!-- <div> -->
             <div class="text title">Book A Book</div>
             <div class="text subtitle">Make a deal.</div>
             <img src="media\.svg\_path_.svg" alt="handshake image">
-            <img id="animated-handshake" src="media\.svg\handshake (2).svg" alt="handshake image">
+            <img id="animated-handshake" src="media\.svg\handshake.svg" alt="handshake image">
         <!-- </div> -->
     </section>
+
+
+
     <main>
         <section id="login-area">
             <div class="left">
@@ -99,16 +251,20 @@
         
         <section>
  
+        <footer>
+            <span id="nav-bar-logo">
+                <a class="main-color-txt" href=".html">BOOKY</a>
+            </span>
+        </footer>
     </main>
 
-    <footer>
-        <span id="nav-bar-logo">
-            <a class="main-color-txt" href=".html">BOOKY</a>
-        </span>
-    </footer>
     
     <script src="js/show-password.js"></script>
-    <script src="js/buttons.js"></script>
+    <script src="js\NavBar\nav-hover.js"></script>
+    <script src="js\NavBar\navbarMenu.js"></script>
+    <script>
+        feather.replace()
+      </script>
 </body>
         
 </html>

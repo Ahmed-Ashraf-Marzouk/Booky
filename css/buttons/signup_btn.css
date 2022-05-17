@@ -1,0 +1,50 @@
+
+#nav-bar > span.btn > .btn-shadow {
+    position: relative;
+    background-color: black;
+    width:10px;
+    height:10px;
+    display:inline-block;
+    width: 15ch;
+    height: 30px;
+    border-radius: 3px;
+    font-family: var(--Serif);
+    font-size: 1.3rem;
+    
+}
+#nav-bar > span.btn > .btn-shadow > .btn-body {
+    position: absolute;
+    border: 0.14rem solid black;
+    /* font-weight: bold; */
+    top: -3.5px;
+    left: -3.5px;
+    background-color: #FC6254;
+    display:inline-block;
+    border-radius: 3px;
+    width: 15ch;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+#nav-bar > span.btn > .btn-shadow > .btn-body > a{
+    color: var(--bg-light);
+    letter-spacing: 0.2rem;
+}
+
+#nav-bar > span.btn > .btn-shadow > .btn-body.flash {
+
+    /* text-decoration: 2px underline; */
+}
+
+#nav-bar > span.btn > .btn-shadow > .btn-body.hover {
+    left: -5.5px;
+    top: -5.5px;
+        font-weight: bold;
+    background-color: #FC4F3F;
+    /* text-decoration: 2px underline; */
+}
+
+#nav-bar > span.btn > .btn-shadow > .btn-body.focus {
+    box-shadow: inset 0px 0px 0.2rem 0rem black;
+    /* text-decoration: 2px underline; */
+}
