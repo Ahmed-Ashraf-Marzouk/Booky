@@ -87,3 +87,8 @@
     font-size: 1.5rem;
 }
 
+#login-area form i.hide{
+    display: none;
+}
+
+

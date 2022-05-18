@@ -16,8 +16,8 @@
     position: absolute;
     border: 0.14rem solid black;
     /* font-weight: bold; */
-    top: -3.5px;
-    left: -3.5px;
+    top: -0.35rem;
+    left: -0.35rem;
     background-color: #FC6254;
     display:inline-block;
     border-radius: 3px;
@@ -37,8 +37,8 @@
 }
 
 #nav-bar > span.btn > .btn-shadow > .btn-body.hover {
-    left: -5.5px;
-    top: -5.5px;
+    left: -1.15rem;
+    top: -0.55rem;
         font-weight: bold;
     background-color: #FC4F3F;
     /* text-decoration: 2px underline; */
