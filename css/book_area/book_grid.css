@@ -1,54 +1,53 @@
+/* Book Area */
 #book-area{
     width: 100%;
-     box-sizing: border-box;
-
+    box-sizing: border-box;
 }
+
+#book-area *{
+    box-sizing: border-box;
+}
+
+/* Book Grid */
 #book-area > section.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3%;
+    row-gap: 8%;
 
     padding: 1%;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 9px -3px inset;
 }
 
 #book-area > section.grid > div.book-card{
-    background-color:#f4efe2;
-    box-sizing: border-box;
-}
-#book-area > section.grid > div img{
-    width: 100px;
-}
-
-#book-area > section.grid > div i:hover ~ i{
-    color: #FFC107;
-}
-
-#book-area > section.grid > div.book-card {
-    overflow: hidden;
-    /* max-width: 292px; */
-    /* max-height: ; */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
     height: fit-content;
 
+    background-color:#f4efe2;
     border-radius: 3px;
+
     box-shadow: 0px 0px 9px -3.2px #0000006e;
+    box-sizing: border-box;
+    
+    overflow: hidden;
 }
 
-#book-area > section.grid > div.book-card > *{
-    /* width: 100%; */
-    box-sizing: border-box;
-}
+
 #book-area > section.grid > div.book-card > .book-name{
+    position: relative;
+    
     font-family: var(--Serif);
     font-size: 1.5rem;
     font-weight: bold;
-
     letter-spacing: 0.01rem;
-
+    
     margin-top: 3%;
+
     /* Ellipsis on 2 lines */
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -58,25 +57,25 @@
 }
 
 #book-area > section.grid > div.book-card > .book-cover{
-    max-width: 100%;
-    height: 300px;
+    position: relative;
+    max-height: 300px;
+    height: 250px;
 }
 
 #book-area > section.grid > div.book-card > .book-cover > img{
+    display: block;   
+
     width: 100%;
     height: 100%;
-    object-fit: cover;
-
-    display: block;
-    
     border-radius: 2px;
+    
+    object-fit: cover;
 }
 
 #book-area > section.grid > div.book-card > *:not(.book-cover, .bottom){
     margin-left: 3%;
     margin-right: 3%;
 }
-
 
 #book-area > section.grid > div.book-card > .author{
     color: var(--Orange);
@@ -89,7 +88,6 @@
 }
 #book-area > section.grid > div.book-card > .rating{
     text-align: center;
-    /* text-align: center; */
     vertical-align: middle;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -98,8 +96,7 @@
 #book-area > section.grid > div.book-card > .rating > .price{
     font-size: 2rem;
     margin-bottom: 2%;
-    color: var(--Orange);
-    
+    color: var(--Orange);    
 }
 
 #book-area > section.grid > div.book-card > .tags{
@@ -115,11 +112,10 @@
 
 #book-area > section.grid > div.book-card > .tags > span{
     background-color: #dcdcdca7;
-    /* border: 1px solid black; */
     box-sizing: border-box;
     margin: 0 1%;
     padding: 0.2em;
-    /* border-radius: 1000px; */
+
 }
 
 #book-area > section.grid > div.book-card > .bottom{
@@ -143,18 +139,29 @@
     width: 46%;
     
 }
- /* padding: 0;
- margin: 0;    */
 
-/* #book-area > section.grid > div.book-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-/* #book-area > section.grid {
-    display: flex;
-    gap: 3%;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-} */
+#book-area > section.grid > div.book-card > .book-cover > .fa-bookmark{
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    transform: translateX(100%);
+    font-size: 2rem;
+    background-color: #F4EFE2;
+    padding: 3% 3% 2% 3%;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    box-shadow: 0px 0px 0.1px -0.2px black;
+}
+
+#book-area > section.grid > div.book-card > .book-cover > .fa-bookmark.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+#book-area > section.grid > div.book-card > .book-cover > .fa-bookmark.hover::before{
+    color: #F04242;
+    display: block;
+    transform: translate(0px, -2px);
+}
+#book-area > section.grid > div.book-card > .book-cover > .fa-bookmark.fa-solid{
+    color: #F04242;
+}
