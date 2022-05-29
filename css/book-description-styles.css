@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Varela Round';
+}
+
+
+
+
+.book-card{
+    display: flex;
+}
+
+
+/* **************************************************************** */
+/* image container with animations */
+.image-container{
+
+}
+
+.image-background{
+    width: 80%; 
+    background-color: var(--Orange);
+    padding: auto;
+    transition: all 0.5s ease ;
+
+}
+
+.image{
+    transform: scale(0.9);
+    border: 1px solid var(--bg-dark-1);
+    transition: all 0.5s ease ;
+
+}
+
+.image:hover{
+    transform:scale(0.95);
+    opacity: 95%;
+    border-radius: 2%;
+
+}
+
+.image-background:hover  {
+    width: 53%;
+}
+
+/* ************************************************************** */
+
+/* rating */
+
+.rate {
+    float: left;
+    top:600%;
+    /* height: %; */
+    left:10%;
+    display: block;
+    /* padding-right: 70%; */
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999%;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:400%;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+
+/* ************************************************************** */
+
+
+/* side content display */
+
+.side-content{
+    /* display: inline-block; */
+    margin-top: 2.5%;
+    width: 40%;
+    margin-left: 10%;
+}
+
+
+.book-description{
+    padding-top:15%;
+    font-size: 1.5rem;
+    text-align: justify;
+    height: 100%;
+    text-justify: inter-word;
+    transition: all 0.5s ease;
+    color: #ccc;
+
+}
+
+.book-description:hover{
+    color: black;
+
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+
+.book-description::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height:0rem;
+    width: 0.5%;
+    background: var(--Orange);
+    top: 29.5%;
+    right: 19%;
+    transition: all 0.5s ease;
+}
+
+
+.book-description:hover::after {
+    height:44rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

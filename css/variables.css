@@ -1,10 +1,13 @@
-:root{
+ :root{
     --bg-light: #FAF9F4;
     --bg: #F9F7F0;
     --bg-dark: #F8F5ED;
+    --bg-dark-1: #faf4e3;
+
     --Orange: #FC4F3F;
     --Accent: #1c78d4;
     --Black : #000;
+    --bg-dark-2: #faf4e3;
 
     --Serif: 'DM Serif Display'
 }
