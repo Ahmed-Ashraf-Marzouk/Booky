@@ -52,9 +52,9 @@
 .rate {
     float: left;
     top:600%;
-    /* height: %; */
     left:10%;
     display: block;
+    /* transition: all 5s ease; */
     /* padding-right: 70%; */
 }
 .rate:not(:checked) > input {
@@ -99,13 +99,13 @@
 .side-content{
     /* display: inline-block; */
     margin-top: 2.5%;
-    width: 40%;
+    width: 50%;
     margin-left: 10%;
 }
 
 
 .book-description{
-    padding-top:15%;
+    margin-top:15%;
     font-size: 1.5rem;
     text-align: justify;
     height: 100%;
@@ -128,19 +128,124 @@
 .book-description::after{
     content: '';
     display: inline-block;
-    position: absolute;
+    position: relative;
     height:0rem;
     width: 0.5%;
     background: var(--Orange);
-    top: 29.5%;
-    right: 19%;
+    top: 5%;
+    right: 80.5%;
     transition: all 0.5s ease;
+    opacity: 30%;
 }
-
+/* 
 
 .book-description:hover::after {
     height:44rem;
+    opacity: 100%;
+} */
+
+
+
+/* ************************************************************ */
+
+
+/* reviews */
+
+.review{
+    display: flex;
+    margin-top: 5%;
+    /* align-content: space-between; */
 }
+
+.reviews-title{
+    margin-top:5%;
+    margin-left: 1%;
+    font-size:4rem;
+    border-bottom: 3px solid var(--Orange);
+    width: fit-content;
+    transition: all 1s ease;
+}
+/* 
+.reviews-title:hover{
+    font-size:4.2rem;
+} */
+
+
+
+.review{
+    /* border-radius: 6%; */
+    margin: 2%;
+    margin-left: 1%;
+    transition: all 1s ease;
+    border: 0px solid #ccc;
+
+}
+
+
+.review:hover{
+    box-shadow: 5px 5px #ccc;
+
+}
+
+.user{
+    width: 10%;
+}
+
+.user-image-container{
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 100%;
+    height: 16vh;
+    display: inline-block;
+    
+
+}
+.user-image{
+    width: 70%;
+    height: 15vh;
+    padding:5%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user-name{
+    display: inline-block;
+    margin-bottom: 1%;
+    /* border-bottom: 2px solid var(--Orange); */
+    font-size: 2rem;
+}
+
+.comment{
+    margin: 2%;
+    width: 90%;
+    font-size: 1.7rem;
+    transition: all 1s ease-in-out;
+    
+
+}
+
+.comment-content{
+    opacity: 30%;
+    text-align: justify;
+    text-justify: inter-word;
+    transition: all 1s ease;
+
+}
+
+
+
+
+.comment:hover .comment-content {
+    /* font-size:1.7rem; */
+    opacity: 100%;
+}
+
+
+
+
+
+
+
 
 
 
