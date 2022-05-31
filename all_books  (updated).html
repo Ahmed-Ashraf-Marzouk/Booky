@@ -1,242 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Booky Home</title>
-    <link rel="icon" href="media\Logo\B-removebg-preview.png">
+    <link rel="icon" href="media\Logo\B-removebg-preview.png" />
 
-    <script src="https://kit.fontawesome.com/54f44a10c5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/54f44a10c5.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/layout.css" />
 
-    <link rel="stylesheet" href="css\NavBar CSS\navbar.css">
-    <link rel="stylesheet" href="css\NavBar CSS\navbarMenu.css">
-    <link rel="stylesheet" href="css\buttons\signup_btn.css">
+    <link rel="stylesheet" href="css\NavBar CSS\navbar.css" />
+    <link rel="stylesheet" href="css\NavBar CSS\navbarMenu.css" />
+    <link rel="stylesheet" href="css\buttons\signup_btn.css" />
 
-    <link rel="stylesheet" href="css\banner.css">
-    <link rel="stylesheet" href="css\book_area\control.css">
-    <link rel="stylesheet" href="css\book_area\book_grid.css">
+    <link rel="stylesheet" href="css\banner.css" />
+    <link rel="stylesheet" href="css\book_area\control.css" />
+    <link rel="stylesheet" href="css\book_area\book_grid.css" />
 
-    <link rel="stylesheet" href="css/text-input.css">
+    <link rel="stylesheet" href="css/text-input.css" />
 
-    <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/states.css">
-    
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/states.css" />
+
     <!-- <script src="https://unpkg.com/feather-icons"></script> -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Header and Menu bar (should be placed here) -->
 
     <nav id="nav-bar">
-        <span class="cell logo"> 
-            <a class="logo" href="" >BOOKY</a>
-        </span>
+      <span class="cell logo">
+        <a class="logo" href="">BOOKY</a>
+      </span>
 
-        <ul class="row">           
-            <section class="container">
-                <li class="cell active"> 
-                    <a href="" >Home</a>
-                </li>
-                <li class="cell " sectionName="section-members"> 
-                    <a href="index.html" >Members</a>
-                </li>
-                <li class="cell" sectionName="section-books"> 
-                    <a href="" >Books</a>
-                </li>
-                <li class="cell" sectionName="section-bookmarks"> 
-                    <a href="" >Bookmarks</a>
-                </li>
-                <li class="cell" sectionName="section-profile"> 
-                    <a href="" >Profile</a>
-                </li>
-            </section>
+      <ul class="row">
+        <section class="container">
+          <li class="cell active">
+            <a href="">Home</a>
+          </li>
+          <li class="cell" sectionName="section-members">
+            <a href="index.html">Members</a>
+          </li>
+          <li class="cell" sectionName="section-books">
+            <a href="">Books</a>
+          </li>
+          <li class="cell" sectionName="section-bookmarks">
+            <a href="">Bookmarks</a>
+          </li>
+          <li class="cell" sectionName="section-profile">
+            <a href="">Profile</a>
+          </li>
+        </section>
 
-            <div class="popover">
-                <div class="content">
-                    <div class="section section-members">
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Fiction</li>
-                                <li>Non-fiction</li>
-                                <li>Drama</li>
-                                <li>Fiction</li>
-                                <li>Adventre</li>
-                                <li>Adventre</li>
-                                <li>Adventre</li>
-                                <li>Adventre</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Topic</li>
-                                <li>Science</li>
-                                <li>Math</li>
-                                <li>Nature</li>
-                                <li>Health</li>
-                                <li>Business</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Adventre</li>
-                                <li>Fiction</li>
-                                <li>Non-fiction</li>
-                                <li>Drama</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="section section-books">
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Fiction</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Adventre</li>
-                                <li>Fiction</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="section section-bookmarks">
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Fiction</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="section section-profile">
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Adventre</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Adventre</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li class="title">By Genre</li>
-                                <li>Action</li>
-                                <li>Adventre</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                                <li>Fiction</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="background"></div>
-
-                <div class="arrow"></div>
+        <div class="popover">
+          <div class="content">
+            <div class="section section-members">
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Fiction</li>
+                  <li>Non-fiction</li>
+                  <li>Drama</li>
+                  <li>Fiction</li>
+                  <li>Adventre</li>
+                  <li>Adventre</li>
+                  <li>Adventre</li>
+                  <li>Adventre</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="title">By Topic</li>
+                  <li>Science</li>
+                  <li>Math</li>
+                  <li>Nature</li>
+                  <li>Health</li>
+                  <li>Business</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Adventre</li>
+                  <li>Fiction</li>
+                  <li>Non-fiction</li>
+                  <li>Drama</li>
+                </ul>
+              </div>
             </div>
-        </ul>
 
-        <span class="cell btn" >
-            <span class="btn-shadow">
-                <span class="btn-body">
-                    <a class="" href="" >Sign Up</a>
-                </span>
-            </span>
+            <div class="section section-books">
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Fiction</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Adventre</li>
+                  <li>Fiction</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="section section-bookmarks">
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Fiction</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="section section-profile">
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Adventre</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Adventre</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="title">By Genre</li>
+                  <li>Action</li>
+                  <li>Adventre</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                  <li>Fiction</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="background"></div>
+
+          <div class="arrow"></div>
+        </div>
+      </ul>
+
+      <span class="cell btn">
+        <span class="btn-shadow">
+          <span class="btn-body">
+            <a class="" href="">Sign Up</a>
+          </span>
         </span>
-
+      </span>
     </nav>
 
     <section id="banner">
-        <!-- <div> -->
-            <div class="text title">Book A Book</div>
-            <div class="text subtitle">Make a deal.</div>
-            
-            <img src="media\.svg\5138-ai.svg" alt="">
-        <!-- </div> -->
+      <!-- <div> -->
+      <div class="text title">Book A Book</div>
+      <div class="text subtitle">Make a deal.</div>
+
+      <img src="media\svg\5138-ai.svg" alt="" />
+      <!-- </div> -->
     </section>
 
     <main>
-       
-        
-        <section id="book-area">
+      <section id="book-area">
+        <section id="control">
+          <div id="search">
+            <div>Search</div>
+            <label for="search-books"></label>
+            <div class="text-input">
+              <i class="fa-solid fa-address-card"></i>
+              <input
+                type="text"
+                name="search-books"
+                id="search-books"
+                placeholder="Search..."
+              />
+            </div>
 
-            <section id="control">
-                <div id="search">
-                    <header>Search</header>
-                    <label for="search-books"></label>
-                    <div class="text-input">
-                        <i class="fa-solid fa-address-card"></i>
-                        <input type="text" name="search-books" id="search-books" placeholder="Search...">
-                    </div>
-                    
-                    <label for="search_by">By</label>
-                    <select name="search_by" id="search_by">
-                        <option>Book Name</option>
-                        <option>Author</option>
-                        <option>Seller</option>
-                        <option>Location</option>
-                    </select>
-                </div>
-                
-                <!-- <div>Filter</div>
+            <label for="search_by">By</label>
+            <select name="search_by" id="search_by">
+              <option>Book Name</option>
+              <option>Author</option>
+              <option>Seller</option>
+              <option>Location</option>
+            </select>
+          </div>
+
+          <!-- <div>Filter</div>
                 <div id="filter">
                     <div id="price">
                         <div>Price</div>
@@ -306,606 +321,637 @@
                 </div>
             </section>
 
-            <section class="grid">
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-and-coffe.jpg" alt="">
-                        <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-turning_page.jpg" alt="">
-                        <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book_cover.jpeg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/casey-horner-4rDCa5hBlCs-unsplash.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/louis-reed-hzp_aT02R48-unsplash.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/massimiliano-morosinotto-3i5PHVp1Fkw-unsplash.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/nasa-yZygONrUBe8-unsplash.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-and-coffe.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-and-coffe.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-and-coffe.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-and-coffe.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-and-coffe.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-and-coffe.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="media/.jpg/book-and-coffe.jpg" alt="">
-                   <i class="fa-regular fa-bookmark"></i>
-                    </div>
-
-                    <div class="book-name">
-                        Bad Blood: Secrets and Lies in a Silicon Valley Startup
-                    </div>
-
-                    <div class="author">Autohor</div>
-                    <div class="author-name">Hamada</div>
-
-                    <div class="rating">
-                        <div class="price">$300</div>
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="tags">
-                        <span>Fiction</span>
-                        <span>Action</span>
-                        <span>Drama</span>
-                    </div>
-
-                    <div class="bottom">
-                        <span>
-                            <div class="seller">sold by</div>
-                            <div class="seller-name">Khorkhash is SOOOOOOOO</div>
-                        </span>
-                        <span>
-                            <div class="location">location</div>
-                            <div class="location-name">Space Toon</div>
-                        </span>
-                    </div>
-                    
-                </div>
-            </section>
+        <section class="grid">
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-and-coffe.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-turning_page.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book_cover.jpeg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="media/jpg/casey-horner-4rDCa5hBlCs-unsplash.jpg"
+                alt=""
+              />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/louis-reed-hzp_aT02R48-unsplash.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="media/jpg/massimiliano-morosinotto-3i5PHVp1Fkw-unsplash.jpg"
+                alt=""
+              />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/nasa-yZygONrUBe8-unsplash.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-and-coffe.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-and-coffe.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-and-coffe.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-and-coffe.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-and-coffe.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-and-coffe.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="media/jpg/book-and-coffe.jpg" alt="" />
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="book-name">
+              Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            </div>
+
+            <div class="author">Autohor</div>
+            <div class="author-name">Hamada</div>
+
+            <div class="rating">
+              <div class="price">$300</div>
+
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="tags">
+              <span>Fiction</span>
+              <span>Action</span>
+              <span>Drama</span>
+            </div>
+
+            <div class="bottom">
+              <span>
+                <div class="seller">sold by</div>
+                <div class="seller-name">Khorkhash is SOOOOOOOO</div>
+              </span>
+              <span>
+                <div class="location">location</div>
+                <div class="location-name">Space Toon</div>
+              </span>
+            </div>
+          </div>
         </section>
+      </section>
 
-        <footer>
-            <span id="nav-bar-logo">
-                <a class="main-color-txt" href=".html">BOOKY</a>
-            </span>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia quae!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia quae!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia quae!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia quae!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia quae!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia quae!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia quae!</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia quae!</div>
-        </footer>
+      <footer>
+        <span id="nav-bar-logo">
+          <a class="main-color-txt" href=".html">BOOKY</a>
+        </span>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste
+          aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia
+          quae!
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste
+          aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia
+          quae!
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste
+          aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia
+          quae!
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste
+          aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia
+          quae!
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste
+          aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia
+          quae!
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste
+          aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia
+          quae!
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste
+          aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia
+          quae!
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          nobis quaerat in, atque eveniet rerum placeat, iure nihil debitis iste
+          aspernatur! Dolores commodi quaerat vero totam sed aperiam, officia
+          quae!
+        </div>
+      </footer>
     </main>
-    
 
-
-        <!-- Footer -->
+    <!-- Footer -->
     <script src="js\book_area\book_grid.js"></script>
     <script src="js\show-password.js"></script>
     <script src="js\NavBar\nav-hover.js"></script>
     <script src="js\NavBar\navbarMenu.js"></script>
     <script src="js\book_area\book_control.js"></script>
-</body>
-
+  </body>
 </html>

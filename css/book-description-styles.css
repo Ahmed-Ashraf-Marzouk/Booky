@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Varela Round';
+}
+
+
+
+
+.book-card{
+    display: flex;
+}
+
+
+/* **************************************************************** */
+/* image container with animations */
+.image-container{
+
+}
+
+.image-background{
+    width: 80%; 
+    background-color: var(--Orange);
+    padding: auto;
+    transition: all 0.5s ease ;
+
+}
+
+.image{
+    transform: scale(0.9);
+    border: 1px solid var(--bg-dark-1);
+    transition: all 0.5s ease ;
+
+}
+
+.image:hover{
+    transform:scale(0.95);
+    opacity: 95%;
+    border-radius: 2%;
+
+}
+
+.image-background:hover  {
+    width: 53%;
+}
+
+/* ************************************************************** */
+
+/* rating */
+
+.rate {
+    float: left;
+    top:600%;
+    left:10%;
+    display: block;
+    /* transition: all 5s ease; */
+    /* padding-right: 70%; */
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999%;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:400%;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+
+/* ************************************************************** */
+
+
+/* side content display */
+
+.side-content{
+    /* display: inline-block; */
+    margin-top: 2.5%;
+    width: 50%;
+    margin-left: 10%;
+}
+
+
+.book-description{
+    margin-top:15%;
+    font-size: 1.5rem;
+    text-align: justify;
+    height: 100%;
+    text-justify: inter-word;
+    transition: all 0.5s ease;
+    color: #ccc;
+
+}
+
+.book-description:hover{
+    color: black;
+
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+
+.book-description::after{
+    content: '';
+    display: inline-block;
+    position: relative;
+    height:0rem;
+    width: 0.5%;
+    background: var(--Orange);
+    top: 5%;
+    right: 80.5%;
+    transition: all 0.5s ease;
+    opacity: 30%;
+}
+/* 
+
+.book-description:hover::after {
+    height:44rem;
+    opacity: 100%;
+} */
+
+
+
+/* ************************************************************ */
+
+
+/* reviews */
+
+.review{
+    display: flex;
+    margin-top: 5%;
+    /* align-content: space-between; */
+}
+
+.reviews-title{
+    margin-top:5%;
+    margin-left: 1%;
+    font-size:4rem;
+    border-bottom: 3px solid var(--Orange);
+    width: fit-content;
+    transition: all 1s ease;
+}
+/* 
+.reviews-title:hover{
+    font-size:4.2rem;
+} */
+
+
+
+.review{
+    /* border-radius: 6%; */
+    margin: 2%;
+    margin-left: 1%;
+    transition: all 1s ease;
+    border: 0px solid #ccc;
+
+}
+
+
+.review:hover{
+    box-shadow: 5px 5px #ccc;
+
+}
+
+.user{
+    width: 10%;
+}
+
+.user-image-container{
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 100%;
+    height: 16vh;
+    display: inline-block;
+    
+
+}
+.user-image{
+    width: 70%;
+    height: 15vh;
+    padding:5%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user-name{
+    display: inline-block;
+    margin-bottom: 1%;
+    /* border-bottom: 2px solid var(--Orange); */
+    font-size: 2rem;
+}
+
+.comment{
+    margin: 2%;
+    width: 90%;
+    font-size: 1.7rem;
+    transition: all 1s ease-in-out;
+    
+
+}
+
+.comment-content{
+    opacity: 30%;
+    text-align: justify;
+    text-justify: inter-word;
+    transition: all 1s ease;
+
+}
+
+
+
+
+.comment:hover .comment-content {
+    /* font-size:1.7rem; */
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* ************************************************ */
+/* book-slider */
+
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;  
+}
+
+.slider .slide {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 0.3s left ease-in-out;
+}
+
+.slider .item {
+    margin-right: 10px;
+}
+
+.slider .item:last-child {
+    margin-right: 0;
+}
+
+.ctrl {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ctrl-btn {
+    padding: 20px 20px;
+    min-width: 50px;
+    background: #fff;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+
+    position: absolute;
+    top: 55%;
+    margin-1top: -27.5px;
+}
+
+.ctrl-btn.pro-prev {
+    left: 0;
+}
+
+.ctrl-btn.pro-next {
+    right: 0;
+}
+
+.item{
+    width: 300px;
+    min-width: 300px;
+    transition: all 1s ease;
+}
+
+
+.item:hover{
+    opacity: 80%;
+    transform: perspective(5000px) translateZ(200px);
+    /* margin: 10%; */
+    /* width: 350px; */
+
+
+}
+
+.slider-title{
+    margin:5%;
+    margin-left: 1%;
+    font-size:4rem;
+    border-bottom: 3px solid var(--Orange);
+    width: fit-content;
+    transition: all 1s ease;
+}
+
+

@@ -1,33 +1,21 @@
 
-.body {
-  background-color: #faa79f;
+
+/* general reules */
+* {
+  padding: 0;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
-
-  /* font-family: 'Varela Round', sans-serif; */
-
-  
 }
 
-#logo-id {
-  /* vertical-align: middle; */
-  width: 4%;
-  position: relative;
-  top: -64px;
-  left: 40px;
-
-  /* margin-right: 35%; */
-  /* margin-left: 1%; */
-  
+html {
+  box-sizing: border-box;
 }
 
-#profile-page {
-  text-align: center;
-  color: white;
-  position: relative;
-  top: 10px;
-  left: 0%;
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
 }
+
 
 #profile-picture-id {
   width: 20%;
@@ -37,7 +25,7 @@
 }
 
 #profile-name {
-  margin-block-start: -8.5em;
+  margin-block-start: -8.1em;
   font-size: 36.5px;
   margin-left: 37%;
 }
@@ -46,48 +34,12 @@
   width: 45%;
   height: 220px;
   text-align: justify;
-  margin-block-start: -0.05em;
+  margin-block-start: 0.95em;
   font-size: 19.5px;
   margin-left: 37%;
-  color: rgb(247, 239, 239);
+  color: rgb(162 116 116);
   overflow: auto;
 }
-
-.topnav {
-  /* position: fixed;
-  overflow: hidden;
-  top: 0; */
-
-  text-align: center;
-  font-size: 114%;
-  margin-top: -2%;
-  border-width: 3px;
-  border-style: solid none;
-  border-radius: 26%;
-  padding: 1%;
-  background-color: #ef786d;
-  position: sticky;
-  top: 0;
-  }
-
-
-.topnav a {
-  color: rgb(213, 197, 197);
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 19px;
-  font-weight: bold;
-  }
-
-.topnav a:hover {
-  color: black;
-  }
-
-
-.topnav a.active {
-  color: rgb(99, 11, 11);
-  }
-
 
 #facebook-icon {
   color: red;
@@ -200,14 +152,4 @@
   margin-top: 15px;
   margin-bottom: 5px;
 }
-
-.footer {
-  background-color: rgb(213, 197, 197);
-  margin-top: 5%;
-  border-width: 5px;
-  border-color: rgb(213, 197, 197);
-  border-style: solid;
-}
-
-
 
