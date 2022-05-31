@@ -1,28 +1,48 @@
 <?php
 
-
 include 'config.php';
 
 session_start();
 error_reporting(0);
-$_wrong = ' ';
-if (isset($_POST['submit'])) {
-    $email = $_POST['email'];
-    $password = md5($_POST['password']);
 
-    $sql = "SELECT * FROM userinfo WHERE email='$email' AND password='$password'";
-    $result = mysqli_query($conn, $sql);
-    if ($result->num_rows > 0) {
-        $row = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $row['username'];
-        // echo $_SESSION['username'];
-        header("Location: all_booksu.php");
+$_smth_wrong = '';
+$_email_exist = '';
+$_password_error = '';
+if (isset($_POST['ssubmit'])) {
+    $susername = $_POST['susername'];
+    $semail = $_POST['semail'];
+    $spassword = md5($_POST['spassword']);
+    $scpassword = md5($_POST['scpassword']);
+
+    if ($spassword == $scpassword) {
+        $sql = "SELECT * FROM userinfo WHERE email='$semail'";
+        $result = mysqli_query($conn, $sql);
+        if (!(mysqli_num_rows($result) > 0)) {
+            $sql = "INSERT INTO userinfo (username, email, password)
+            VALUES ('$susername', '$semail', '$spassword')";
+            $result = mysqli_query($conn, $sql);
+            if ($result) {
+                // echo "<script>alert('User registration success')</script>";
+                $susername = '';
+                $semail = '';
+                $_POST['spassword'] = '';
+                $_POST['scpassword'] = '';
+                header("Location: login.php");
+            } else {
+                $_smth_wrong = 'Something went wrong';
+            }
+        } else {
+            $_email_exist = 'Email already exists';
+        }
     } else {
-        $_wrong = 'Wrong email or password';
+        $_password_error = 'Password not match';
     }
 }
 
+
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,10 +74,6 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="css/footer.css">
 
 
-    <!-- icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-
 
     <!-- <script src="https://unpkg.com/feather-icons"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet" />
@@ -68,10 +84,9 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body class="max-width-body bg-color">
-
     <nav id="nav-bar">
         <span class="cell logo">
-            <a class="logo" href="">BOOKY</a>
+            <a class="logo" href="index.php">BOOKY</a>
         </span>
 
         <ul class="row">
@@ -85,7 +100,12 @@ if (isset($_POST['submit'])) {
                 <li class="cell" sectionName="section-books">
                     <a href="">Books</a>
                 </li>
-
+                <li class="cell" sectionName="section-bookmarks">
+                    <a href="">Bookmarks</a>
+                </li>
+                <li class="cell" sectionName="section-profile">
+                    <a href="">Profile</a>
+                </li>
             </section>
 
             <div class="popover">
@@ -224,7 +244,7 @@ if (isset($_POST['submit'])) {
         <span class="cell btn">
             <span class="btn-shadow">
                 <span class="btn-body">
-                    <a class="" href="signup.php">Sign Up</a>
+                    <a class="" href="">Sign Up</a>
                 </span>
             </span>
         </span>
@@ -232,7 +252,6 @@ if (isset($_POST['submit'])) {
     </nav>
 
 
-    </section>
 
 
 
@@ -240,53 +259,82 @@ if (isset($_POST['submit'])) {
         <section id="login-area">
             <div class="left">
                 <div class="small-title">
-                    Login-in
+                    Sign-up
                 </div>
 
-                <form action="" method="POST" id="login-form">
-                    <label for="email">Email</label>
+
+                <form action="" method="POST" id="signup-form">
+
+                    <label for="susername">Username</label>
                     <div class="text-input">
                         <i class="fa-solid fa-address-card"></i>
-                        <input type="text" name="email" id="email" value="<?php echo $email; ?>" placeholder="email">
+                        <input type="text" name="susername" id="susername" value="<?php echo $susername; ?>" placeholder="Username">
+                    </div>
+
+                    <label style="margin-top: 0px;" for="semail">Email</label>
+                    <div class="text-input">
+                        <i class="fa-solid fa-address-card"></i>
+                        <input type="text" name="semail" id="semail" value="<?php echo $semail; ?>" placeholder="Email">
                     </div>
 
                     <label for="password">Password</label>
                     <div class="text-input">
                         <i class="fa-solid fa-key"></i>
-                        <input type="password" name="password" id="password" value="<?php echo $_POST['password']; ?>" placeholder="Password">
+                        <input type="password" name="spassword" id="password" value="<?php echo $_POST['spassword']; ?>" placeholder="Password">
                         <i id="show-password" class="fa-solid fa-eye show"></i>
                         <i id="hide-password" class="fa-solid fa-eye-low-vision hide"></i>
                     </div>
 
-                    <div>
-                        <br>
-                        <p style="font-size: 1.5rem;">Already have an account <a href="signup.php">Sign up</a></p>
+                    <label for="scpassword">Confirm password</label>
+                    <div class="text-input">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" name="scpassword" id="scpassword" value="<?php echo $_POST['scpassword']; ?>" placeholder="Password">
+                        <i id="cshow-password" class="fa-solid fa-eye show"></i>
+                        <i id="chide-password" class="fa-solid fa-eye-low-vision hide"></i>
                     </div>
 
-
+                    <div>
+                        <p style="font-size: 1.6rem;">Already have an account? <a href="login.php">login</a></p>
+                    </div>
+                    <!--                     
                     <a href="index.html" id="lost-password">Did it happen again?</a>
                     <div class="button-with-arrow orange-inset">
-                        <button name=submit>Submit</button>
+                        <button name=ssubmit>Submit</button>
                         <i class="fa-solid fa-angle-right"></i>
-                    </div>
+                    </div> -->
+
+                    <span class="cell btn">
+                        <span class="btn-shadow">
+                            <span class="btn-body">
+                                <button class="" href="" name="ssubmit">Sign Up</button>
+                            </span>
+                        </span>
+                    </span>
+
                 </form>
+
 
                 <style>
                     .wrong-input {
                         font-size: 1.6rem;
                         color: red;
+                        margin-top: 10%;
                     }
                 </style>
 
-                <div><span class="wrong-input"><?php echo $_wrong; ?></span></div>
+                <div><span class="wrong-input"><?php echo $_smth_wrong . $_email_exist . $_password_error; ?></span></div>
 
 
-
+                <!-- 
+                <a href="index.html" id="lost-password">Did it happen again?</a>
+                <div class="button-with-arrow orange-inset">
+                    <span>Submit</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div> -->
             </div>
             <div class="right">
                 <img src="media\svg\Reading glasses-bro.svg" alt="">
             </div>
-
         </section>
 
         <footer>
@@ -360,6 +408,7 @@ if (isset($_POST['submit'])) {
                     </ul>
                 </nav>
             </div>
+        </footer>
         </footer>
     </main>
 

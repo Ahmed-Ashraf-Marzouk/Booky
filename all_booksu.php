@@ -1,3 +1,15 @@
+<?php
+
+
+include 'config.php';
+session_start();
+// error_reporting(0);
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,9 +71,11 @@
         <li class="cell" sectionName="section-profile">
           <a href="">Profile</a>
         </li>
-        <li class="cell" sectionName="section-profile">
-          <a href="logout.php">logout</a>
+
+        <li class="cell">
+          <a href="logout.php"><?php echo "Hi, " . $_SESSION['username']; ?></a>
         </li>
+
       </section>
 
       <div class="popover">
@@ -200,7 +214,7 @@
     <span class="cell btn">
       <span class="btn-shadow">
         <span class="btn-body">
-          <a class="" href="">Sign Up</a>
+          <a class="" href="logout.php">Log out</a>
         </span>
       </span>
     </span>

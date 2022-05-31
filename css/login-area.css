@@ -92,3 +92,13 @@
 }
 
 
+.wrong-warning{
+    position: absolute;
+    top:50%;
+
+}
+
+.wrong-input{
+    font-size: 2rem;
+    
+}
