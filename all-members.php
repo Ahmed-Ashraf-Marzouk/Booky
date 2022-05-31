@@ -3,7 +3,9 @@
 
 include 'config.php';
 session_start();
-// error_reporting(0);
+error_reporting(0);
+
+$_greeting = '';
 
 
 
@@ -49,29 +51,30 @@ session_start();
 <body>
     <nav id="nav-bar">
         <span class="cell logo">
-            <a class="logo" href="">BOOKY</a>
+            <a class="logo" href="index.php">BOOKY</a>
         </span>
 
         <ul class="row">
             <section class="container">
                 <li class="cell active">
-                    <a href="">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li class="cell" sectionName="section-members">
                     <a href="all-members.php">Members</a>
                 </li>
                 <li class="cell" sectionName="section-books">
-                    <a href="">Books</a>
+                    <a href="all_booksu.php">Books</a>
                 </li>
                 <li class="cell" sectionName="section-bookmarks">
-                    <a href="">Bookmarks</a>
+                    <a href="bookmarks.php">Bookmarks</a>
                 </li>
                 <li class="cell" sectionName="section-profile">
-                    <a href="">Profile</a>
+                    <a href="profile.php">Profile</a>
                 </li>
 
                 <li class="cell">
-                    <a href="logout.php"><?php echo "Hi, " . $_SESSION['username']; ?></a>
+                    <a href="logout.php"><?php $_greeting = 'Hi';
+                                            echo $_greeting . ',' . $_SESSION['username']; ?></a>
                 </li>
 
             </section>

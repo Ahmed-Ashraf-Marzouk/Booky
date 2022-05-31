@@ -1,3 +1,15 @@
+<?php
+
+
+include 'config.php';
+session_start();
+error_reporting(0);
+
+$_greeting = '';
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,8 +57,6 @@
 
 <body class="body">
 
-
-
     <nav id="nav-bar">
         <span class="cell logo">
             <a class="logo" href="">BOOKY</a>
@@ -55,20 +65,26 @@
         <ul class="row">
             <section class="container">
                 <li class="cell active">
-                    <a href="">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
-                <li class="cell " sectionName="section-members">
-                    <a href="index.html">Members</a>
+                <li class="cell" sectionName="section-members">
+                    <a href="all-members.php">Members</a>
                 </li>
                 <li class="cell" sectionName="section-books">
-                    <a href="">Books</a>
+                    <a href="all_booksu.php">Books</a>
                 </li>
                 <li class="cell" sectionName="section-bookmarks">
-                    <a href="">Bookmarks</a>
+                    <a href="bookmarks.php">Bookmarks</a>
                 </li>
                 <li class="cell" sectionName="section-profile">
-                    <a href="">Profile</a>
+                    <a href="profile.php">Profile</a>
                 </li>
+
+                <li class="cell">
+                    <a href="logout.php"><?php $_greeting = 'Hi';
+                                            echo $_greeting . ',' . $_SESSION['username']; ?></a>
+                </li>
+
             </section>
 
             <div class="popover">
@@ -207,11 +223,10 @@
         <span class="cell btn">
             <span class="btn-shadow">
                 <span class="btn-body">
-                    <a class="" href="">Sign Up</a>
+                    <a class="" href="Signup.php">Sign up</a>
                 </span>
             </span>
         </span>
-
     </nav>
 
 
