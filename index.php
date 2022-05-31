@@ -48,7 +48,7 @@
                     <a href="index.php">Home</a>
                 </li>
                 <li class="cell" sectionName="section-members">
-                    <a href="all-members.html">Members</a>
+                    <a href="all-members.php">Members</a>
                 </li>
                 <li class="cell" sectionName="section-books">
                     <a href="all_booksu.php">Books</a>

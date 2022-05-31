@@ -5,59 +5,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/nav-bar.css">
-    <link rel="stylesheet" href="css/all-members.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="media\Logo\B-removebg-preview.png">
+    <script src="https://kit.fontawesome.com/54f44a10c5.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="css/layout.css">
+
+    <link rel="stylesheet" href="css\NavBar CSS\navbar.css">
+    <link rel="stylesheet" href="css\NavBar CSS\navbarMenu.css">
+    <link rel="stylesheet" href="css\buttons\signup_btn.css">
+    <link rel="stylesheet" href="css\footer.css">
+
+
+    <!-- icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <script defer src="js/script.js"></script>
-
-
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
     <title>All members</title>
 </head>
 
 <body>
-    <header>
-        <nav id="nav-bar">
-            <ul>
-                <li id="nav-bar-logo">
-                    <a href=".html">BOOKY</a>
+    <link rel="stylesheet" href="css\all-members.css">
+
+    <nav id="nav-bar">
+        <span class="cell logo">
+            <a class="logo" href="">BOOKY</a>
+        </span>
+
+        <ul class="row">
+            <section class="container">
+                <li class="cell active">
+                    <a href="">Home</a>
                 </li>
-
-                <section>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="all_books.html">Books</a>
-                    </li>
-                    <li>
-                        <a href="all_members.html">Sellers</a>
-                    </li>
-                    <li>
-                        <a href="profile.html">Bookmarks</a>
-                    </li>
-                </section>
-
-                <li id="sign-up">
-                    <a href=".html">Sign Up <i class="fa-solid fa-angle-right"></i></a>
+                <li class="cell " sectionName="section-members">
+                    <a href="index.html">Members</a>
                 </li>
-            </ul>
-        </nav>
+                <li class="cell" sectionName="section-books">
+                    <a href="">Books</a>
+                </li>
+                <li class="cell" sectionName="section-bookmarks">
+                    <a href="">Bookmarks</a>
+                </li>
+                <li class="cell" sectionName="section-profile">
+                    <a href="">Profile</a>
+                </li>
+            </section>
 
-    </header>
-    <div class="left-sidebar">Left Sidebar</div>
+            <div class="popover">
+                <div class="content">
+                    <div class="section section-members">
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                                <li>Non-fiction</li>
+                                <li>Drama</li>
+                                <li>Fiction</li>
+                                <li>Adventre</li>
+                                <li>Adventre</li>
+                                <li>Adventre</li>
+                                <li>Adventre</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Topic</li>
+                                <li>Science</li>
+                                <li>Math</li>
+                                <li>Nature</li>
+                                <li>Health</li>
+                                <li>Business</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Non-fiction</li>
+                                <li>Drama</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section section-books">
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section section-bookmarks">
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section section-profile">
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li class="title">By Genre</li>
+                                <li>Action</li>
+                                <li>Adventre</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                                <li>Fiction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="background"></div>
+
+                <div class="arrow"></div>
+            </div>
+        </ul>
+
+        <span class="cell btn">
+            <span class="btn-shadow">
+                <span class="btn-body">
+                    <a class="" href="">Sign Up</a>
+                </span>
+            </span>
+        </span>
+
+    </nav>
+
+    <div class="search-box"></div>
+    <div class="top-members">
+
+        <p class="top-text">Top Members This Week</p>
+        <img data-top src="media/images/1.jpg" alt="member">
+        <button data-button-left class="btn btn--left">
+            <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button data-button-right class="btn btn--right">
+            <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+        <div class="dots">
+            <button data-dot class="dot">&nbsp;</button>
+            <button data-dot class="dot">&nbsp;</button>
+            <button data-dot class="dot">&nbsp;</button>
+            <button data-dot class="dot">&nbsp;</button>
+            <button data-dot class="dot">&nbsp;</button>
+        </div>
 
 
 
-    <main>
+    </div>
 
+    <div class="members">
         <div class="profile-card">
-            <img src="media/images/member1.jpg" class="profile-image" alt="member-profile">
-            <strong> Ahmed Ali</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Ahmed Ali</p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -70,8 +240,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member2.jpg" class="profile-image" alt="member-profile">
-            <strong> Ahmed Ashraf</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Ahmed Ashraf </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -84,8 +254,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member3.jpg" class="profile-image" alt="member-profile">
-            <strong> Ahmed Khorkhash</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Ahmed Khorkhash </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -98,8 +268,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member4.jpg" class="profile-image" alt="member-profile">
-            <strong> Mohamed Ans</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Mohamed Ans </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -112,8 +282,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member5.jpg" class="profile-image" alt="member-profile">
-            <strong> Mohamed Sameh</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Mohamed Sameh </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -126,8 +296,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member6.jpg" class="profile-image" alt="member-profile">
-            <strong> Kareem Younes</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Kareem Younes </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -140,8 +310,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member7.jpg" class="profile-image" alt="member-profile">
-            <strong> Kareem El-Sayed</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Kareem El-Sayed</p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -154,8 +324,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member8.jpg" class="profile-image" alt="member-profile">
-            <strong> Ali El-Sayed</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Ali El-Sayed </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -168,8 +338,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member9.jpg" class="profile-image" alt="member-profile">
-            <strong> Sayed El-Sayed</strong>
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Sayed El </p> >
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -182,8 +352,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member10.jpg" class="profile-image" alt="member-profile">
-            <strong> Saeed Kolnash</strong>
+            <img src="media/images/11.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Saeed Kolnash </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -196,8 +366,8 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/member11.jpg" class="profile-image" alt="member-profile">
-            <strong> Sayed zayed</strong>
+            <img src="media/images/11.jpg" data-modal class="profile-image" alt="member-profile">
+            <p class="member-name"> Sayed zayed </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -213,16 +383,15 @@
 
 
 
-    </main>
+    </div>
 
-    <div class="right-sidebar" contenteditable>Right Sidebar</div>
     <footer class="footer">
         <div class="container grid grid--footer">
-            <div class="logo-col">
-                <a href="#" class="footer-logo">
-                    BOOKY
-                </a>
 
+
+
+            <div class="logo-col">
+                <a class="logo" href="">BOOKY</a>
                 <ul class="social-links">
                     <li>
                         <a class="footer-link" href="#">
@@ -240,9 +409,9 @@
                         </a>
                     </li>
                 </ul>
-                <br><br>
+
                 <p class="copyright">
-                    Copyright &copy; <span class="year">2023</span> by Booky, Inc.
+                    Copyright &copy; <span class="year">2027</span> by Booky
                     All rights reserved.
                 </p>
             </div>
@@ -288,6 +457,16 @@
             </nav>
         </div>
     </footer>
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+
+    </div>
+    <div data-overlay class="overlay hidden"></div>
+
+    <script src="js\NavBar\nav-hover.js"></script>
+    <script src="js\NavBar\navbarMenu.js"></script>
+    <script src="js\slider.js"></script>
+    <script src="js\modal.js"></script>
 
 </body>
 
