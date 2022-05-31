@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="css\NavBar CSS\navbar.css">
     <link rel="stylesheet" href="css\NavBar CSS\navbarMenu.css">
     <link rel="stylesheet" href="css\buttons\signup_btn.css">
-    <link rel="stylesheet" href="css\footer.css">
-    <link rel="stylesheet" href="css\all-members.css">
-
+    <link rel="stylesheet" href="css/all-members.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
@@ -240,7 +239,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/2.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ahmed Ashraf </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -254,7 +253,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/3.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ahmed Khorkhash </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -268,7 +267,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/4.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Mohamed Ans </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -282,7 +281,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/5.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Mohamed Sameh </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -296,7 +295,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/6.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Kareem Younes </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -310,7 +309,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/7.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Kareem El-Sayed</p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -324,7 +323,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/8.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ali El-Sayed </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -338,7 +337,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/9.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Sayed El </p> >
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -352,7 +351,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/11.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/10.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Saeed Kolnash </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
