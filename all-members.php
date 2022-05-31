@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css\NavBar CSS\navbarMenu.css">
     <link rel="stylesheet" href="css\buttons\signup_btn.css">
     <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\all-members.css">
 
 
     <!-- icons scripts -->
@@ -28,7 +29,6 @@
 </head>
 
 <body>
-    <link rel="stylesheet" href="css\all-members.css">
 
     <nav id="nav-bar">
         <span class="cell logo">
