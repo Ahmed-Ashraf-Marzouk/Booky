@@ -30,6 +30,7 @@
 </head>
 
 <body>
+
     <nav id="nav-bar">
         <span class="cell logo">
             <a class="logo" href="">BOOKY</a>
@@ -228,7 +229,7 @@
 
     <div class="members">
         <div class="profile-card">
-            <img src="media/images/1.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ahmed Ali</p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -242,7 +243,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/2.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/2.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ahmed Ashraf </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -256,7 +257,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/3.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/3.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ahmed Khorkhash </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -270,7 +271,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/4.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/4.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Mohamed Ans </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -284,7 +285,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/5.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/5.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Mohamed Sameh </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -298,7 +299,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/6.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/6.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Kareem Younes </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -312,7 +313,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/7.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/7.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Kareem El-Sayed</p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -326,7 +327,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/8.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/8.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ali El-Sayed </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -340,7 +341,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/9.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/9.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Sayed El </p> >
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -354,7 +355,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/10.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/10.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Saeed Kolnash </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -368,7 +369,7 @@
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/11.jpg" class="profile-image" alt="member-profile">
+            <img src="media/images/11.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Sayed zayed </p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
@@ -459,10 +460,16 @@
             </nav>
         </div>
     </footer>
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+
+    </div>
+    <div data-overlay class="overlay hidden"></div>
 
     <script src="js\NavBar\nav-hover.js"></script>
     <script src="js\NavBar\navbarMenu.js"></script>
     <script src="js\slider.js"></script>
+    <script src="js\modal.js"></script>
 
 </body>
 

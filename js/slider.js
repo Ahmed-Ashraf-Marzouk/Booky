@@ -24,7 +24,7 @@ rightButton.addEventListener("click", function () {
 
 function slideShow() {
   topMember.src = `media/images/${counter}.jpg`;
-  console.log(counter);
+  //   console.log(counter);
   dots[counter - 1].classList.toggle("dot--fill");
   counter < 5 ? counter++ : (counter = 1);
   setTimeout("slideShow()", time);
