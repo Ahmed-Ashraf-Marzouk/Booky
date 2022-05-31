@@ -60,7 +60,7 @@ session_start();
           <a href="">Home</a>
         </li>
         <li class="cell" sectionName="section-members">
-          <a href="index.html">Members</a>
+          <a href="all-members.php">Members</a>
         </li>
         <li class="cell" sectionName="section-books">
           <a href="">Books</a>

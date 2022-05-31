@@ -1,3 +1,14 @@
+<?php
+
+
+include 'config.php';
+session_start();
+// error_reporting(0);
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +19,19 @@
     <link rel="icon" href="media\Logo\B-removebg-preview.png">
     <script src="https://kit.fontawesome.com/54f44a10c5.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/layout.css">
 
-    <link rel="stylesheet" href="css\NavBar CSS\navbar.css">
-    <link rel="stylesheet" href="css\NavBar CSS\navbarMenu.css">
-    <link rel="stylesheet" href="css\buttons\signup_btn.css">
+    <link rel="stylesheet" href="css/layout.css" />
+
+    <link rel="stylesheet" href="css\NavBar CSS\navbar.css" />
+    <link rel="stylesheet" href="css\NavBar CSS\navbarMenu.css" />
+    <link rel="stylesheet" href="css\buttons\signup_btn.css" />
+    <link rel="stylesheet" href="css\banner.css" />
+    <link rel="stylesheet" href="css\book_area\control.css" />
+    <link rel="stylesheet" href="css\book_area\book_grid.css" />
+    <link rel="stylesheet" href="css/text-input.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/states.css" />
     <link rel="stylesheet" href="css/all-members.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -28,7 +47,6 @@
 </head>
 
 <body>
-
     <nav id="nav-bar">
         <span class="cell logo">
             <a class="logo" href="">BOOKY</a>
@@ -39,8 +57,8 @@
                 <li class="cell active">
                     <a href="">Home</a>
                 </li>
-                <li class="cell " sectionName="section-members">
-                    <a href="index.html">Members</a>
+                <li class="cell" sectionName="section-members">
+                    <a href="all-members.php">Members</a>
                 </li>
                 <li class="cell" sectionName="section-books">
                     <a href="">Books</a>
@@ -51,6 +69,11 @@
                 <li class="cell" sectionName="section-profile">
                     <a href="">Profile</a>
                 </li>
+
+                <li class="cell">
+                    <a href="logout.php"><?php echo "Hi, " . $_SESSION['username']; ?></a>
+                </li>
+
             </section>
 
             <div class="popover">
@@ -189,12 +212,13 @@
         <span class="cell btn">
             <span class="btn-shadow">
                 <span class="btn-body">
-                    <a class="" href="">Sign Up</a>
+                    <a class="" href="logout.php">Log out</a>
                 </span>
             </span>
         </span>
-
     </nav>
+
+
 
     <div class="search-box"></div>
     <div class="top-members">

@@ -1,160 +1,154 @@
+
+
+/* general reules */
 * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f8efea;
-    box-shadow: 0px 15px 20px -25px #f65d4e;
-    margin: 0;
-    position: fixed;
-}
-
-
-.logo-link {
-    margin-top: 10px;
-}
-
-.logo {
-    width: calc(1153px/4);
-    margin-right: 100px;
-    transform: scale(0.8);
-}
-
-.menu {
-    width: 75%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 35px;
-    margin-left: 60px;
-
-}
-
-.menu-item {
-    margin-right: 70px;
-}
-
-
-.item-link {
-    text-decoration: none;
+  }
+  
+  body {
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  
+  #profile-picture-id {
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 3%;
+    border-radius: 10%;
+  }
+  
+  #profile-name {
+    margin-block-start: -8.1em;
+    font-size: 36.5px;
+    margin-left: 37%;
+  }
+  
+  #profile-info {
+    width: 45%;
+    height: 220px;
+    text-align: justify;
+    margin-block-start: 0.95em;
+    font-size: 19.5px;
+    margin-left: 37%;
+    color: rgb(162 116 116);
+    overflow: auto;
+  }
+  
+  #facebook-icon {
+    color: red;
+    transition: color 0.2s;
+    margin: 0 10px;
+    font-size: 30px;
+  }
+  
+   #facebook-icon:hover {
     color: black;
-    font-size: 21px;
-    font-family: 'DM Serif Display', serif;
-    transition-duration: 300ms;
-}
-
-.item-link::before {
-    height: 2px;
-    content: "";
-    position: absolute;
-    width: 0px;
-    background-color: #f65d4e;
-    transition: all 0.3s ease-out;
-}
-
-/* #c99290 */
-.item-link:hover::before {
-    width: 1%;
-}
-
-.item-link:hover {
-    color: #f65d4e;
-}
-
-
-.img-menu {
-    list-style: none;
-    display: flex;
-    margin-top: 35px;
-    margin-left: 30px;
-    margin-right: 3px;
-}
-
-.img-item {
-    width: 50%;
-    padding-top: 4px;
-    transition: all 0.3s ease-out;
-}
-
-.img-link {
-    margin-left: 10px;
-    text-align: center;
-    transition: border-radius 0.4s ease-out, background-color 0.9s ease-out;
-
-
-
-}
-
-.img-item:hover {
-    filter: contrast(10%);
-    filter: invert(70%);
-}
-
-
-
-.books {
+  
+  }
+  
+  #twitter-icon {
+    color: red;
+    transition: color 0.2s;
+    margin: 0 10px;
+    font-size: 30px;
+  }
+  
+  #twitter-icon:hover {
+    color: black;
+  
+  }
+  
+  #instagram-icon {
+    color: red;
+    transition: color 0.2s;
+    margin: 0 10px;
+    font-size: 30px;
+  }
+  
+  #instagram-icon:hover {
+    color: black;
+  
+  }
+  
+  #google-icon {
+    color: red;
+    transition: color 0.2s;
+    margin: 0 10px;
+    font-size: 30px;
+  }
+  
+  #google-icon:hover {
+    color: black;
+  
+  }
+  
+  .icons-container {
+    margin-left: 13%;
+    margin-top: 2.5%;
+  }
+  
+  .section-1 {
+    margin-top: 3%;
+    border-width: 5px 0px 0px;
+    border-color: rgb(213, 197, 197);
+    border-style: solid;
+  }
+  
+  #books-by {
+    margin-left: 10%;
+    margin-top: 2%;
+    width: fit-content;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #f65d4e;
+  }
+  
+  .books-container {
     display: inline-grid;
     grid-template-columns: auto auto auto;
-    margin-left: 20px
-}
-
-.book-img {
-    width: 350px;
-    border-radius: 5px;
-
-}
-
-.rating {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.star-item {
-    display: inline;
-}
-
-.star-img {
-    width: 12px;
-}
-
-.fig {
-    border: 2px solid #f6ccb6;
+    margin-left: 124px
+  }
+  
+  .book-img {
+    width: 291px;
+    border-radius: 13px;
+  }
+  
+  .figure-attribute {
+    border: 2px solid #f65d4e;
     border-radius: 5px;
     padding: 18px;
     margin: 26px;
-}
-
-figcaption {
-    margin-bottom: 10px;
-    font-family: 'Akshar', sans-serif;
+  }
+  
+  .fig-caption {
     margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 0px;
     font-size: 20px;
     transition-duration: 400ms;
-    padding-right: 0px;
-}
-
-figcaption:hover {
+  }
+  
+  .fig-caption:hover {
     color: #f65d4e;
-}
-
-.author {
-    font-family: 'Akshar', sans-serif;
-    color: grey;
+  }
+  
+  .author {
+    color: #df0202;
     font-weight: 100;
-
-}
-
-.price {
-    color: #f65d4e;
-    font-family: 'Akshar', sans-serif;
+  
+  }
+  
+  .price {
+    color: #ab3125;
     font-size: 30px;
     margin-top: 15px;
     margin-bottom: 5px;
-}
+  }
