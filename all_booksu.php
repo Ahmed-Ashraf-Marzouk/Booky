@@ -364,16 +364,18 @@ error_reporting(0);
         </div>
 
         <div class="book-card">
+
           <div class="book-cover">
             <img src="media/jpg/book-turning_page.jpg" alt="" />
             <i class="fa-regular fa-bookmark"></i>
           </div>
 
           <div class="book-name">
-            Bad Blood: Secrets and Lies in a Silicon Valley Startup
+            <a href="book_description.php">Bad Blood: Secrets and Lies in a Silicon Valley Startup</a>
           </div>
 
-          <div class="author">Autohor</div>
+          <div class=" author">Autohor
+          </div>
           <div class="author-name">Hamada</div>
 
           <div class="rating">
