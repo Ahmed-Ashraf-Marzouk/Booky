@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css\buttons\signup_btn.css">
     <link rel="stylesheet" href="css/all-members.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!-- icons scripts -->
 
+    <!-- icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
     <!-- fonts -->
@@ -198,31 +198,38 @@
     </nav>
 
     <div class="search-box"></div>
-    <!-- <div class="top-members">
+    <div class="top-members">
 
-
-        <img src="media/images/1.jpg" alt="member">
-        <button class="btn btn--left">
+        <p class="top-text">Top Members This Week</p>
+        <img data-top src="media/images/1.jpg" alt="member">
+        <button data-button-left class="btn btn--left">
             <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
-        <button class="btn btn--right">
+        <button data-button-right class="btn btn--right">
             <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
         </button>
+        <div class="dots">
+            <button data-dot class="dot">&nbsp;</button>
+            <button data-dot class="dot">&nbsp;</button>
+            <button data-dot class="dot">&nbsp;</button>
+            <button data-dot class="dot">&nbsp;</button>
+            <button data-dot class="dot">&nbsp;</button>
+        </div>
 
 
 
-    </div> -->
+    </div>
 
     <div class="members">
         <div class="profile-card">
             <img src="media/images/1.jpg" class="profile-image" alt="member-profile">
-            <strong> Ahmed Ali</strong>
+            <p class="member-name"> Ahmed Ali</p>
             <div class="rating">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -455,6 +462,7 @@
 
     <script src="js\NavBar\nav-hover.js"></script>
     <script src="js\NavBar\navbarMenu.js"></script>
+    <script src="js\slider.js"></script>
 
 </body>
 
