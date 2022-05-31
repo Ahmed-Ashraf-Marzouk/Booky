@@ -10,9 +10,11 @@
     margin: 0 0 1rem 0;
 } */
 
-#control > div > div {
-    font-family: var(--Serif)
+#control header{
+    font-family: var(--Serif);
+    font-size: 2rem;
 }
+
 #control > #genre > form {
     display: flex;
     flex-direction: row;
