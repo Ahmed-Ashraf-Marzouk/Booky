@@ -71,9 +71,11 @@ $_greeting = '';
                     <a href="profile.php">Profile</a>
                 </li>
 
+
                 <li class="cell">
-                    <a href="logout.php"><?php $_greeting = 'Hi';
-                                            echo $_greeting . ',' . $_SESSION['username']; ?></a>
+                    <a href="profile.php"><?php if (isset($_SESSION['username']))
+                                                $_greeting = 'Hi, ';
+                                            echo $_greeting  . $_SESSION['username']; ?></a>
                 </li>
 
             </section>
@@ -211,7 +213,8 @@ $_greeting = '';
             </div>
         </ul>
 
-        <?php if ($_SESSION['username'] == '') {
+
+        <?php if (!isset($_SESSION['username'])) {
             echo '
             <span class="cell btn">
                 <span class="btn-shadow">

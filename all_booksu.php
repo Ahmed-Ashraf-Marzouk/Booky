@@ -71,9 +71,11 @@ error_reporting(0);
           <a href="profile.php">Profile</a>
         </li>
 
+
         <li class="cell">
-          <a href="logout.php"><?php $_greeting = 'Hi';
-                                echo $_greeting . ',' . $_SESSION['username']; ?></a>
+          <a href="profile.php"><?php if (isset($_SESSION['username']))
+                                  $_greeting = 'Hi, ';
+                                echo $_greeting  . $_SESSION['username']; ?></a>
         </li>
 
       </section>
@@ -211,13 +213,27 @@ error_reporting(0);
       </div>
     </ul>
 
-    <span class="cell btn">
-      <span class="btn-shadow">
-        <span class="btn-body">
-          <a class="" href="logout.php">Log out</a>
-        </span>
-      </span>
-    </span>
+
+    <?php if (!isset($_SESSION['username'])) {
+      echo '
+            <span class="cell btn">
+                <span class="btn-shadow">
+                    <span class="btn-body">
+                        <a class="" href="Signup.php">Sign up</a>
+                    </span>
+                </span>
+            </span>';
+    } else {
+      echo '
+            <span class="cell btn">
+                <span class="btn-shadow">
+                    <span class="btn-body">
+                        <a class="" href="logout.php">Log out</a>
+                    </span>
+                </span>
+            </span>';
+    }
+    ?>
   </nav>
 
 

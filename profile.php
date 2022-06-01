@@ -8,7 +8,9 @@ error_reporting(0);
 $_greeting = '';
 
 
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,8 +83,9 @@ $_greeting = '';
                 </li>
 
                 <li class="cell">
-                    <a href="logout.php"><?php $_greeting = 'Hi';
-                                            echo $_greeting . ',' . $_SESSION['username']; ?></a>
+                    <a href="profile.php"><?php if (isset($_SESSION['username']))
+                                                $_greeting = 'Hi, ';
+                                            echo $_greeting  . $_SESSION['username']; ?></a>
                 </li>
 
             </section>
@@ -220,13 +223,28 @@ $_greeting = '';
             </div>
         </ul>
 
-        <span class="cell btn">
-            <span class="btn-shadow">
-                <span class="btn-body">
-                    <a class="" href="Signup.php">Sign up</a>
+
+
+        <?php if (!isset($_SESSION['username'])) {
+            echo '
+            <span class="cell btn">
+                <span class="btn-shadow">
+                    <span class="btn-body">
+                        <a class="" href="Signup.php">Sign up</a>
+                    </span>
                 </span>
-            </span>
-        </span>
+            </span>';
+        } else {
+            echo '
+            <span class="cell btn">
+                <span class="btn-shadow">
+                    <span class="btn-body">
+                        <a class="" href="logout.php">Log out</a>
+                    </span>
+                </span>
+            </span>';
+        }
+        ?>
     </nav>
 
 
@@ -260,20 +278,14 @@ $_greeting = '';
     <header>
 
 
-
         <div>
-            <img id="profile-picture-id" src="media/images/mickey-mouse-profile-picture.jpg" alt="a profile picture">
-            <h1 id="profile-name">Hamada Khorkhash</h1>
-            <p id="profile-info">Ahmed is awesome, he is a British author, screenwriter and an award-winning journalist, best
+            <img id="profile-picture-id" src=<?php echo $_SESSION['userpic'] ?> alt="a profile picture">
+            <h1 id="profile-name"><?php echo $_SESSION['username'] ?></h1>
+            <p id="profile-info" style="color:black"><?php echo $_SESSION['username'] ?> isa awesome, he is a British author, screenwriter and an award-winning journalist, best
                 known for her phenomenally successful debut thriller The Appeal.
                 Before her breakout entry into the realms of crime fiction, Janice Hallett worked as a journalist,
                 magazine editor and speech writer for the Cabinet Office and Home Office, as well as writing for
-                the stage and screen. Her first feature film Retreat (co-written and directed by Carl Tibbetts) came
-                out in 2011, and she won the award for Best New Screenplay at the 2014 British Independent Film Festival.
-                Ahmed is awesome, he is a British author, screenwriter and an award-winning journalist, best
-                known for her phenomenally successful debut thriller The Appeal.
-                Before her breakout entry into the realms of crime fiction, Janice Halleeeeeeeeeeeeeeeeeeeeeeeeeeeee
-                eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                the stage and screen.
             </p>
 
             <div class="icons-container">
@@ -306,54 +318,54 @@ $_greeting = '';
 
     <section class="section-1">
 
-        <h1 id="books-by">Books By <span id="books-by-author-name">Hamada Khorkhash</span></h1>
+        <h1 id="books-by" style="font-size: 6rem;">Books By <span id="books-by-author-name"><?php echo $_SESSION['username'] ?></span></h1>
 
         <div class="books-container">
 
             <figure class="figure-attribute">
-                <img class="book-img" src="media/images/sonic.png" alt="book image">
+                <img class="book-img" src="media/images/a-b-image.jpg" alt="book image">
                 <figcaption class="fig-caption">Me at a high speed</figcaption>
                 <p class="author"> Hamada Mohammed Khorkhash</p>
                 <p class="price">335$</p>
             </figure>
 
             <figure class="figure-attribute">
-                <img class="book-img" src="media/images/sonic.png" alt="book image">
+                <img class="book-img" src="media/images/a-b-image.jpg" alt="book image">
                 <figcaption class="fig-caption">Me at a high speed</figcaption>
                 <p class="author"> Hamada Mohammed Khorkhash</p>
                 <p class="price">335$</p>
             </figure>
 
             <figure class="figure-attribute">
-                <img class="book-img" src="media/images/sonic.png" alt="book image">
+                <img class="book-img" src="media/images/a-b-image.jpg" alt="book image">
                 <figcaption class="fig-caption">Me at a high speed</figcaption>
                 <p class="author"> Hamada Mohammed Khorkhash</p>
                 <p class="price">335$</p>
             </figure>
 
             <figure class="figure-attribute">
-                <img class="book-img" src="media/images/sonic.png" alt="book image">
+                <img class="book-img" src="media/images/a-b-image.jpg" alt="book image">
                 <figcaption class="fig-caption">Me at a high speed</figcaption>
                 <p class="author"> Hamada Mohammed Khorkhash</p>
                 <p class="price">335$</p>
             </figure>
 
             <figure class="figure-attribute">
-                <img class="book-img" src="media/images/sonic.png" alt="book image">
+                <img class="book-img" src="media/images/a-b-image.jpg" alt="book image">
                 <figcaption class="fig-caption">Me at a high speed</figcaption>
                 <p class="author"> Hamada Mohammed Khorkhash</p>
                 <p class="price">335$</p>
             </figure>
 
             <figure class="figure-attribute">
-                <img class="book-img" src="media/images/sonic.png" alt="book image">
+                <img class="book-img" src="media/images/a-b-image.jpg" alt="book image">
                 <figcaption class="fig-caption">Me at a high speed</figcaption>
                 <p class="author"> Hamada Mohammed Khorkhash</p>
                 <p class="price">335$</p>
             </figure>
 
             <figure class="figure-attribute">
-                <img class="book-img" src="media/images/sonic.png" alt="book image">
+                <img class="book-img" src="media/images/a-b-image.jpg" alt="book image">
                 <figcaption class="fig-caption">Me at a high speed</figcaption>
                 <p class="author"> Hamada Mohammed Khorkhash</p>
                 <p class="price">335$</p>
