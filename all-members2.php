@@ -13,7 +13,6 @@ $_greeting = '';
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +27,6 @@ $_greeting = '';
     <link rel="stylesheet" href="css\buttons\signup_btn.css">
     <link rel="stylesheet" href="css/all-members.css">
     <link rel="stylesheet" href="css/footer.css">
-
     <link rel="stylesheet" href="css/layout.css">
 
     <link rel="stylesheet" href="css\NavBar CSS\navbar.css">
@@ -43,6 +41,7 @@ $_greeting = '';
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/states.css">
+
     <!-- icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
@@ -55,6 +54,7 @@ $_greeting = '';
 </head>
 
 <body>
+
     <nav id="nav-bar">
         <span class="cell logo">
             <a class="logo" href="">BOOKY</a>
@@ -63,28 +63,20 @@ $_greeting = '';
         <ul class="row">
             <section class="container">
                 <li class="cell active">
-                    <a href="index.php">Home</a>
+                    <a href="">Home</a>
                 </li>
-                <li class="cell" sectionName="section-members">
-                    <a href="all-members.php">Members</a>
+                <li class="cell " sectionName="section-members">
+                    <a href="index.html">Members</a>
                 </li>
                 <li class="cell" sectionName="section-books">
-                    <a href="all_booksu.php">Books</a>
+                    <a href="">Books</a>
                 </li>
                 <li class="cell" sectionName="section-bookmarks">
-                    <a href="bookmarks.php">Bookmarks</a>
+                    <a href="">Bookmarks</a>
                 </li>
                 <li class="cell" sectionName="section-profile">
-                    <a href="profile.php">Profile</a>
+                    <a href="">Profile</a>
                 </li>
-
-
-                <li class="cell">
-                    <a href="profile.php"><?php if (isset($_SESSION['username']))
-                                                $_greeting = 'Hi, ';
-                                            echo $_greeting  . $_SESSION['username']; ?></a>
-                </li>
-
             </section>
 
             <div class="popover">
@@ -220,27 +212,13 @@ $_greeting = '';
             </div>
         </ul>
 
-
-        <?php if (!isset($_SESSION['username'])) {
-            echo '
-            <span class="cell btn">
-                <span class="btn-shadow">
-                    <span class="btn-body">
-                        <a class="" href="Signup.php">Sign up</a>
-                    </span>
+        <span class="cell btn">
+            <span class="btn-shadow">
+                <span class="btn-body">
+                    <a class="" href="">Sign Up</a>
                 </span>
-            </span>';
-        } else {
-            echo '
-            <span class="cell btn">
-                <span class="btn-shadow">
-                    <span class="btn-body">
-                        <a class="" href="logout.php">Log out</a>
-                    </span>
-                </span>
-            </span>';
-        }
-        ?>
+            </span>
+        </span>
 
     </nav>
 
@@ -273,7 +251,7 @@ $_greeting = '';
 
     <div class="members">
         <div class="profile-card">
-            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/13.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ahmed Ali</p>
             <p class="location">Cairo, Egypt</p>
             <p class="books-read">43 book read</p>
@@ -289,7 +267,7 @@ $_greeting = '';
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/2.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/14.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ahmed Ashraf </p>
             <p class="location">Cairo, Egypt</p>
             <p class="books-read">43 book read</p>
@@ -305,7 +283,7 @@ $_greeting = '';
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/3.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/15.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ahmed Khorkhash </p>
             <p class="location">Cairo, Egypt</p>
             <p class="books-read">43 book read</p>
@@ -321,7 +299,7 @@ $_greeting = '';
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/4.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/1.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Mohamed Ans </p>
             <p class="location">Cairo, Egypt</p>
             <p class="books-read">43 book read</p>
@@ -337,7 +315,7 @@ $_greeting = '';
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/5.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/2.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Mohamed Sameh </p>
             <p class="location">Cairo, Egypt</p>
             <p class="books-read">43 book read</p>
@@ -353,7 +331,7 @@ $_greeting = '';
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/6.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/3.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Kareem Younes </p>
             <p class="location">Cairo, Egypt</p>
             <p class="books-read">43 book read</p>
@@ -369,7 +347,7 @@ $_greeting = '';
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/7.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/4.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Kareem El-Sayed</p>
             <p class="location">Cairo, Egypt</p>
             <p class="books-read">43 book read</p>
@@ -385,7 +363,7 @@ $_greeting = '';
             </button>
         </div>
         <div class="profile-card">
-            <img src="media/images/8.jpg" data-modal class="profile-image" alt="member-profile">
+            <img src="media/images/5.jpg" data-modal class="profile-image" alt="member-profile">
             <p class="member-name"> Ali El-Sayed </p>
             <p class="location">Cairo, Egypt</p>
             <p class="books-read">43 book read</p>
@@ -472,8 +450,8 @@ $_greeting = '';
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
-        <a href="#" class="page-link page-link--current">1</a>
-        <a href="all-members2.php" class="page-link">2</a>
+        <a href="all-members.php" class="page-link">1</a>
+        <a href="all-members2.php" class="page-link page-link--current">2</a>
         <a href="#" class="page-link ">3</a>
         <a href="#" class="page-link">4</a>
         <a href="#" class="page-link">5</a>

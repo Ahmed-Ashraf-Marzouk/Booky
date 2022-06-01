@@ -1,13 +1,11 @@
 <?php
+// Include the database configuration file  
+require_once 'config.php';
 
-
-include 'config.php';
+// $updated_image = '';
 session_start();
 error_reporting(0);
-
-$_greeting = '';
-
-
+// If file upload form is submitted 
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
 }
@@ -47,7 +45,6 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/states.css">
-
 
     <link rel="stylesheet" href="css/css-for-profile-page.css">
 
@@ -249,47 +246,86 @@ if (!isset($_SESSION['username'])) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <header>
 
 
         <div>
-            <img id="profile-picture-id" src=<?php echo $_SESSION['userpic'] ?> alt="a profile picture">
+            <?php
+
+            $status = $statusMsg = '';
+            if (isset($_POST["submit"])) {
+                $status = 'error';
+                if (!empty($_FILES["image"]["name"])) {
+                    // Get file info 
+                    $fileName = basename($_FILES["image"]["name"]);
+                    $fileType = pathinfo($fileName, PATHINFO_EXTENSION);
+
+                    // Allow certain file formats 
+                    $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
+                    if (in_array($fileType, $allowTypes)) {
+                        $image = $_FILES['image']['tmp_name'];
+                        $imgContent = addslashes(file_get_contents($image));
+                        $username = $_SESSION['username'];
+                        $sql = "UPDATE userinfo SET userpic= '$imgContent' WHERE username = '$username' ";
+                        $result = mysqli_query($conn, $sql);
+                        if ($result->num_rows > 0) {
+                        } else {
+                            $statusMsg = "File upload failed, please try again.";
+                        }
+                    } else {
+                        $statusMsg = 'Sorry, only JPG, JPEG, PNG, & GIF files are allowed to upload.';
+                    }
+                } else {
+                    $statusMsg = 'Please select an image file to upload.';
+                }
+                $sql = "SELECT * FROM userinfo WHERE username = '$username' ";
+                $result = mysqli_query($conn, $sql);
+                $img = mysqli_fetch_assoc($result);
+                //Render the image
+                // header("Content-type: userpic/jpg");
+                $_SESSION['updated_image'] = $img['userpic'];
+                // echo 'asdsad';
+                // echo $updated_image;
+                // echo '<img class="user-image" src="data:image/jpg;base64,' . base64_encode($updated_image) . '" />';
+            }
+
+            if (!($_SESSION['updated_image'] == '')) {
+                echo '<img style= "width: 25%;padding-top:3%; padding-left:10%;" id="user-image" src="data:image/jpg;base64,' . base64_encode($_SESSION['updated_image']) . '" />';
+            } else {
+
+                $username = $_SESSION['username'];
+                $image = 'G:\Semester8\internet-programming\Project\Booky\media\images\17.jpg';
+                $imgContent = addslashes(file_get_contents($image));
+                $sql = "UPDATE userinfo SET userpic= '$imgContent' WHERE username = '$username' ";
+                $result = mysqli_query($conn, $sql);
+                $sql = "SELECT * FROM userinfo WHERE username = '$username' ";
+                $result = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($result);
+                //Render the image
+                // header("Content-type: userpic/jpg");
+                $_SESSION['updated_image'] = $row['userpic'];
+                echo '<img style=" width: 25%; padding-top:3%; padding-left:10%;" id="user-image" src="data:image/jpg;base64,' . base64_encode($_SESSION['updated_image']) . '" />';
+            }
+
+            ?>
+
             <h1 id="profile-name"><?php echo $_SESSION['username'] ?></h1>
             <p id="profile-info" style="color:black"><?php echo $_SESSION['username'] ?> isa awesome, he is a British author, screenwriter and an award-winning journalist, best
                 known for her phenomenally successful debut thriller The Appeal.
                 Before her breakout entry into the realms of crime fiction, Janice Hallett worked as a journalist,
                 magazine editor and speech writer for the Cabinet Office and Home Office, as well as writing for
                 the stage and screen.
+
             </p>
+
 
             <div class="icons-container">
 
+                <form style="margin-bottom:3%; " action="" method="post" enctype="multipart/form-data">
+                    <label style="margin-top: 12%;font-size: 1.6rem">Select Image File:</label>
+                    <input type="file" name="image">
+                    <input style="position:relative; right: 5%;" type="submit" name="submit" value="Upload">
+                </form>
                 <a id="facebook-icon" target="_blank" href="https:facebook.com">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
@@ -312,9 +348,6 @@ if (!isset($_SESSION['username'])) {
 
 
     </header>
-
-
-
 
     <section class="section-1">
 
