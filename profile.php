@@ -79,6 +79,7 @@ if (!isset($_SESSION['username'])) {
                     <a href="profile.php">Profile</a>
                 </li>
 
+
                 <li class="cell">
                     <a href="profile.php"><?php if (isset($_SESSION['username']))
                                                 $_greeting = 'Hi, ';
@@ -221,7 +222,6 @@ if (!isset($_SESSION['username'])) {
         </ul>
 
 
-
         <?php if (!isset($_SESSION['username'])) {
             echo '
             <span class="cell btn">
@@ -242,6 +242,7 @@ if (!isset($_SESSION['username'])) {
             </span>';
         }
         ?>
+
     </nav>
 
 
@@ -310,12 +311,7 @@ if (!isset($_SESSION['username'])) {
             ?>
 
             <h1 id="profile-name"><?php echo $_SESSION['username'] ?></h1>
-            <p id="profile-info" style="color:black"><?php echo $_SESSION['username'] ?> isa awesome, he is a British author, screenwriter and an award-winning journalist, best
-                known for her phenomenally successful debut thriller The Appeal.
-                Before her breakout entry into the realms of crime fiction, Janice Hallett worked as a journalist,
-                magazine editor and speech writer for the Cabinet Office and Home Office, as well as writing for
-                the stage and screen.
-
+            <p id="profile-info" style="color:black"><?php echo $_SESSION['userdesc'] ?>
             </p>
 
 

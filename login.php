@@ -17,6 +17,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['username'] = $row['username'];
         $_SESSION['userpic'] = '';
         $_SESSION['updated_image'] = '';
+        $_SESSION['userdesc'] = $row['userdesc'];
         // echo $_SESSION['username'];
         header("Location: all_booksu.php");
     } else {

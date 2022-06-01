@@ -13,13 +13,14 @@ if (isset($_POST['ssubmit'])) {
     $semail = $_POST['semail'];
     $spassword = md5($_POST['spassword']);
     $scpassword = md5($_POST['scpassword']);
+    $userdesc = 'is an American author of horror, supernatural fiction, suspense, crime, science-fiction, and fantasy novels. Described as the "King of Horror", a play on his surname and a reference to his high standing in pop culture, his books have sold more than 350 million copies, and many have been adapted into films, television series, miniseries, and comic books. King has published 64 novels, including seven under the pen name Richard Bachman, and five non-fiction books';
 
     if ($spassword == $scpassword) {
         $sql = "SELECT * FROM userinfo WHERE email='$semail'";
         $result = mysqli_query($conn, $sql);
         if (!(mysqli_num_rows($result) > 0)) {
-            $sql = "INSERT INTO userinfo (username, email, password)
-            VALUES ('$susername', '$semail', '$spassword')";
+            $sql = "INSERT INTO userinfo (username, email, password, userdesc)
+            VALUES ('$susername', '$semail', '$spassword', '$userdesc)";
             $result = mysqli_query($conn, $sql);
             if ($result) {
                 // echo "<script>alert('User registration success')</script>";
