@@ -11,10 +11,30 @@ modals.forEach((modal) => {
   });
 });
 
-// document.addEventListener("keydown", function (e) {
-//   // console.log(e.key);
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    for (let index = 0; index < modals.length; index++) {
+      let modal = modals[index];
+      if (
+        modal.classList.contains("modal") &&
+        !overlay.classList.contains("hidden")
+      ) {
+        modal.classList.toggle("modal");
+        overlay.classList.toggle("hidden");
+      }
+    }
+  }
+});
 
-//   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-//     closeModal();
-//   }
-// });
+overlay.addEventListener("click", () => {
+  for (let index = 0; index < modals.length; index++) {
+    let modal = modals[index];
+    if (
+      modal.classList.contains("modal") &&
+      !overlay.classList.contains("hidden")
+    ) {
+      modal.classList.toggle("modal");
+      overlay.classList.toggle("hidden");
+    }
+  }
+});
