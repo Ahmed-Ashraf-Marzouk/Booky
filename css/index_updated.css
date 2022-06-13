@@ -1,0 +1,255 @@
+#trending-books-slider{
+    width: 100%;
+}
+
+#trending-books-slider > .container{
+    /* margin: 5% 0 0 0; */
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+#trending-books-slider > .title {
+    font-size: 6rem;
+    font-weight: bolder;
+    letter-spacing: 0.4rem;
+    color: var(--Orange);
+    text-align: center;
+    padding: 2% 0 0 1%;
+    font-family: var(--Serif);
+}
+#trending-books-slider > .container > span {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    bottom: 0;
+    transition: transform 0.6s ease-in-out, left 0.65s ease-in-out, right 0.7s ease-in-out;
+    transform-origin: center;
+    transform: translateY(-50%);
+    height: fit-content;
+}
+
+#trending-books-slider > .container > span > img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+#trending-books-slider > .container > .current{
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+}
+
+#trending-books-slider > .container > .left{
+    left: 0%;
+    --dir: -1;
+    top: 50%;
+    transform: translateY(-50%) scale(45%, 45%);
+}
+
+#trending-books-slider > .container > .right{
+    left: 80%;
+    --dir: 1;
+    top: 50%;
+    transform: translateY(-50%) scale(45%, 45%);
+}
+
+#trending-books-slider > .container > .hidden{
+    opacity: 0;
+    transform: translate(calc(var(--dir) * 80%), -50%) scale(45%, 45%);
+    transition: transform 0.4s ease-in, opacity 0.5s;
+}
+
+
+#trending-books-slider > .container > .border-arrow > span{
+    border-width: 20px;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 6px;
+}
+
+#trending-books-slider > .container > .border-arrow:last-of-type{
+    border-radius: 10px 0 0 10px;
+    right: 0;
+}
+
+#trending-books-slider > .container > .border-arrow:first-of-type{
+    border-radius: 0 10px 10px 0;
+    left: 0;
+}
+
+#trending-books-slider > .container > .border-arrow:last-of-type > span{
+    border-color: transparent transparent transparent #D2B48C;
+    left: 20%;
+}
+
+#trending-books-slider > .container > .border-arrow:first-of-type > span{
+    border-color: transparent #D2B48C transparent transparent;
+    right: 20%;
+}
+
+#trending-books-slider > .container > .border-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FAEBD7;
+    width: 2.5%;
+    height: 20%;
+    transition: all 0.3s;
+}
+
+
+/* Book Grid */
+#trending-books-slider > .container > span::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
+
+#trending-books-slider > .container > span > div.book-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: fit-content;
+
+    background-color:#f4efe2;
+    border-radius: 3px;
+
+    box-shadow: 0px 0px 9px -3.2px #0000006e;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+}
+
+
+#trending-books-slider > .container > span > div.book-card > .book-name{
+    position: relative;
+    
+    font-family: var(--Serif);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.01rem;
+    
+    margin-top: 3%;
+
+    /* Ellipsis on 2 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#trending-books-slider > .container > span > div.book-card > .book-cover{
+    position: relative;
+    max-height: 300px;
+    height: 250px;
+}
+
+#trending-books-slider > .container > span > div.book-card > .book-cover > img{
+    display: block;   
+
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    
+    object-fit: cover;
+}
+
+#trending-books-slider > .container > span > div.book-card > *:not(.book-cover, .bottom){
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#trending-books-slider > .container > span > div.book-card > .author{
+    color: var(--Orange);
+    font-size: 1rem;
+    margin-top: 2%;
+}
+#trending-books-slider > .container > span > div.book-card > .author-name{
+    color: black;
+    font-size: 1rem;
+}
+#trending-books-slider > .container > span > div.book-card > .rating{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#trending-books-slider > .container > span > div.book-card > .rating > .price{
+    font-size: 2rem;
+    margin-bottom: 2%;
+    color: var(--Orange);    
+}
+
+#trending-books-slider > .container > span > div.book-card > .tags{
+    margin-top: 2%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-color: #F4EFE2 #00b61e;
+    scrollbar-width: thin;
+}
+#trending-books-slider > .container > span > div.book-card > .tags::-webkit-scrollbar{
+    height: 0;
+}
+
+#trending-books-slider > .container > span > div.book-card > .tags > span{
+    background-color: #dcdcdca7;
+    box-sizing: border-box;
+    margin: 0 1%;
+    padding: 0.2em;
+
+}
+
+#trending-books-slider > .container > span > div.book-card > .bottom{
+    background-color: #F2E4D0;
+    padding: 1% 3% 0;
+    margin-top: 3%;
+}
+#trending-books-slider > .container > span > div.book-card > .bottom  .seller, .location{
+    color: var(--Orange);
+    
+}
+#trending-books-slider > .container > span > div.book-card > .bottom  .seller-name, .location-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(100%);
+    
+}
+#trending-books-slider > .container > span > div.book-card > .bottom > span{
+    display: inline-block;
+    width: 46%;
+    
+}
+
+#trending-books-slider > .container > span > div.book-card > .book-cover > .fa-bookmark{
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    transform: translateX(100%);
+    font-size: 2rem;
+    background-color: #F4EFE2;
+    padding: 3% 3% 2% 3%;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    box-shadow: 0px 0px 0.1px -0.2px black;
+}
+
+#trending-books-slider > .container > span > div.book-card > .book-cover > .fa-bookmark.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+#trending-books-slider > .container > span > div.book-card > .book-cover > .fa-bookmark.hover::before{
+    color: #F04242;
+    display: block;
+    transform: translate(0px, -2px);
+}
+#trending-books-slider > .container > span > div.book-card > .book-cover > .fa-bookmark.fa-solid{
+    color: #F04242;
+}

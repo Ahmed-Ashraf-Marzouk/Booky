@@ -17,7 +17,13 @@
 
     padding: 1%;
 
+    overflow-y: scroll;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 9px -3px inset;
+}
+
+#book-area > section.grid::-webkit-scrollbar{
+    height: 0;
+    width: 0;
 }
 
 #book-area > section.grid > div.book-card{
@@ -103,7 +109,7 @@
     margin-top: 2%;
     display: flex;
     overflow-x: scroll;
-    scrollbar-color: #F4EFE2 #F4EFE2;
+    scrollbar-color: #F4EFE2 #00b61e;
     scrollbar-width: thin;
 }
 #book-area > section.grid > div.book-card > .tags::-webkit-scrollbar{
